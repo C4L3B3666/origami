@@ -6,7 +6,43 @@
     <link rel="stylesheet" href="assets/css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-    <h1 class="text-7xl">Origami</h1>
+<body class="bg-[#0D0F14]">
+    <section class="h-screen relative">
+        <div class="absolute inset-0 pointer-events-none z-0" style="background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);background-size: 60px 60px;"></div>
+        <div class="absolute inset-0 pointer-events-none z-0" style="background-image: radial-gradient(circle at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 90%);"></div>
+        <nav class="flex justify-center">
+            <header class="flex justify-between items-center fixed mt-10 w-10/12 px-10 h-14 rounded-full backdrop-blur-xs border border-[#191B20] z-10">
+                <a href="./"><img src="assets/img/logo.png" alt="" srcset="" class="w-52"></a>
+                <ul class="flex gap-6">
+                    <li class="opcao_link_menu"><a href="#">Página Inicial</a></li>
+                    <li class="opcao_link_menu"><a href="#">Planos e Retornos</a></li>
+                    <li class="opcao_link_menu"><a href="#">Como Funciona?</a></li>
+                    <li class="opcao_link_menu"><a href="#">Quem Somos?</a></li>
+                    <li class="opcao_link_menu"><a href="#">Perguntas Frequentes</a></li>
+                </ul>
+                <div class="flex items-center">
+                    <nav class="nav_btns">
+                        <button class="btn btn_primary">Começar</button>
+                        <button class="btn">Desbloquear</button>
+                    </nav>
+                    <button aria-label="Abrir Menu Hambúrguer" aria-expanded="false" class="flex-col space-y-1 items-end hidden">
+                        <span class="linha_menu_hamburguer"></span>
+                        <span class="linha_menu_hamburguer"></span>
+                    </button>
+                </div>
+            </header>
+        </nav>
+
+        <nav class="h-screen flex items-center justify-center text-center px-18">
+            <nav class="flex items-center flex-col">
+                <h1 class="font-geist font-black uppercase text-6xl bg-[linear-gradient(45deg,#fff,#888)] bg-clip-text text-transparent"><span class="font-pop">Origami</span>: sua riqueza guiada por inteligência Artificial</h1>
+                <p class="font-pop font-light text-[#E2E8F0]">Com lucros de até 200% ao ano! Saiba como a Origami pode multiplicar o seu dinheiro de forma inteligente.</p>
+                <div class="nav_btns">
+                    <button class="btn">Começar</button>
+                    <button class="btn btn_primary">Entrar</button>
+                </div>
+            </nav>
+        </nav>
+    </section>
 </body>
 </html>
