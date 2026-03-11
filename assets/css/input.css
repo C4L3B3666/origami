@@ -25,3 +25,21 @@
 .linha_menu_hamburguer {
     @apply w-7 h-0.5 bg-[#E2E8F0] rounded-full nth-[1]:w-5
 }
+
+@keyframes luzFundo{
+    from{
+        transform: translateY(-30px) scale(1);
+    }
+    to{
+        transform: translateY(30px) scale(1.1);
+    }
+}
+
+@keyframes gridMove{
+    0%{
+        background-position:0 0;
+    }
+    100%{
+        background-position:60px 60px;
+    }
+}

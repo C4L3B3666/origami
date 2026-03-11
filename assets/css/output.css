@@ -16,6 +16,7 @@
     --text-6xl--line-height: 1;
     --font-weight-light: 300;
     --font-weight-black: 900;
+    --leading-tight: 1.25;
     --blur-xs: 4px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -210,6 +211,9 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-175 {
+    height: calc(var(--spacing) * 175);
+  }
   .h-screen {
     height: 100vh;
   }
@@ -218,6 +222,15 @@
   }
   .w-52 {
     width: calc(var(--spacing) * 52);
+  }
+  .w-175 {
+    width: calc(var(--spacing) * 175);
+  }
+  .animate-\[gridMove_20s_linear_infinite\] {
+    animation: gridMove 20s linear infinite;
+  }
+  .animate-\[luzFundo_8s_ease_infinite_alternate\] {
+    animation: luzFundo 8s ease infinite alternate;
   }
   .flex-col {
     flex-direction: column;
@@ -257,8 +270,17 @@
   .bg-\[\#0D0F14\] {
     background-color: #0D0F14;
   }
-  .bg-\[linear-gradient\(45deg\,\#fff\,\#888\)\] {
-    background-image: linear-gradient(45deg,#fff,#888);
+  .bg-\[linear-gradient\(45deg\,\#ffffff\,\#9ca3af\,\#ffffff\)\] {
+    background-image: linear-gradient(45deg,#ffffff,#9ca3af,#ffffff);
+  }
+  .bg-\[linear-gradient\(rgba\(255\,255\,255\,0\.05\)_1px\,transparent_1px\)\,linear-gradient\(90deg\,rgba\(255\,255\,255\,0\.05\)_1px\,transparent_1px\)\] {
+    background-image: linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px);
+  }
+  .bg-\[radial-gradient\(circle\,rgba\(92\,200\,255\,0\.25\)0\%\,rgba\(92\,200\,255\,0\.1\)_40\%\,transparent_70\%\)\] {
+    background-image: radial-gradient(circle,rgba(92,200,255,0.25)0%,rgba(92,200,255,0.1) 40%,transparent 70%);
+  }
+  .bg-size-\[60px_60px\] {
+    background-size: 60px 60px;
   }
   .bg-clip-text {
     background-clip: text;
@@ -282,6 +304,10 @@
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
   .font-black {
     --tw-font-weight: var(--font-weight-black);
     font-weight: var(--font-weight-black);
@@ -298,6 +324,13 @@
   }
   .uppercase {
     text-transform: uppercase;
+  }
+  .opacity-40 {
+    opacity: 40%;
+  }
+  .blur-\[120px\] {
+    --tw-blur: blur(120px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   .backdrop-blur-xs {
     --tw-backdrop-blur: blur(var(--blur-xs));
@@ -370,6 +403,22 @@
     width: calc(var(--spacing) * 5);
   }
 }
+@keyframes luzFundo {
+  from {
+    transform: translateY(-30px) scale(1);
+  }
+  to {
+    transform: translateY(30px) scale(1.1);
+  }
+}
+@keyframes gridMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -380,7 +429,64 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-blur {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-brightness {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-contrast {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-grayscale {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-hue-rotate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-invert {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-opacity {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-saturate {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-sepia {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-drop-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-drop-shadow-size {
   syntax: "*";
   inherits: false;
 }
@@ -429,7 +535,21 @@
     *, ::before, ::after, ::backdrop {
       --tw-space-y-reverse: 0;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-blur: initial;
+      --tw-brightness: initial;
+      --tw-contrast: initial;
+      --tw-grayscale: initial;
+      --tw-hue-rotate: initial;
+      --tw-invert: initial;
+      --tw-opacity: initial;
+      --tw-saturate: initial;
+      --tw-sepia: initial;
+      --tw-drop-shadow: initial;
+      --tw-drop-shadow-color: initial;
+      --tw-drop-shadow-alpha: 100%;
+      --tw-drop-shadow-size: initial;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
