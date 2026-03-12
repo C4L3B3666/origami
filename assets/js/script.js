@@ -92,3 +92,7 @@ requestAnimationFrame(neuralAnim)
 }
 
 neuralAnim()
+
+document.querySelector("#menuHamburguer").addEventListener("click",()=> {
+    document.querySelector("#menu").classList.toggle("active")
+})

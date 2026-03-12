@@ -5,13 +5,19 @@
     --font-geist: "Geist", system-ui, sans-serif;
     --font-pop: "Poppins", system-ui, sans-serif;
 }
-
+#menu.active {
+    @apply translate-x-0;
+}
 .opcao_link_menu {
     @apply text-sm font-pop text-[#E2E8F0] hover:text-white transition-colors duration-300
 }
 
 .nav_btns {
     @apply border flex gap-2 py-1 px-2 rounded-full w-max border-[#191B20] backdrop-blur-xs
+}
+
+.nav_btns_desktop {
+    @apply hidden md:flex
 }
 
 .btn {
