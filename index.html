@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-[#0D0F14]">
-    <section class="h-screen relative overflow-hidden">
+<body>
+    <section class="min-h-screen relative bg-[#0D0F14] overflow-hidden">
         <canvas id="neuralNet" class="absolute inset-0 z-0 pointer-events-none opacity-40"></canvas>
 
         <div class="absolute inset-0 pointer-events-none z-0 animate-[gridMove_20s_linear_infinite] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[60px_60px]"></div>
@@ -21,7 +21,7 @@
         </div>
 
         <nav class="flex justify-center">
-            <header class="flex justify-between items-center fixed md:mt-10 w-full md:w-[90%] px-4 md:px-10 md:h-14 h-15 md:rounded-full backdrop-blur-xs border-transparent md:border md:border-[#191B20] z-10">
+            <header class="flex justify-between items-center fixed md:mt-10 w-full md:w-[90%] px-4 md:px-10 md:h-14 h-15 md:rounded-full backdrop-blur-lg border-transparent md:border md:border-[#191B20] z-10">
                 <a href="./" class="z-20"><img src="assets/img/logo1.png" alt="" srcset="" class="w-13 md:w-14"></a>
                 <ul class="absolute md:static flex flex-col md:flex-row backdrop-blur-lg bg-[#030304] md:bg-transparent left-0 w-screen md:w-auto h-screen md:h-auto items-center pt-15 md:pt-0 pb-5 md:pb-0 justify-between top-0 gap-6 translate-x-full md:translate-x-0 transition-transform ease duration-700" id="menu">
                     <li class="opcao_link_menu"><a href="#">Página Inicial</a></li>
@@ -54,6 +54,11 @@
             </nav>
         </nav>
         <canvas id="particles" class="absolute z-0 inset-0 pointer-events-none"></canvas>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-linear-to-b from-transparent to-[#030304] pointer-events-none"></div>
+    </section>
+    
+    <section class="bg-[#030304] text-white min-h-screen">
+    
     </section>
 </body>
 </html>
