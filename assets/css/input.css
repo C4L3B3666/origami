@@ -56,5 +56,43 @@
 }
 
 .texto_subtitulo {
-    @apply font-pop font-light text-[#E2E8F0] text-[15px]
+    @apply font-pop font-light text-[#E2E8F0] text-[15px] opacity-85
+}
+
+
+.card_estatisticas{
+@apply relative rounded-xl border border-[#191B20] p-8 bg-[#050507] 
+flex flex-col gap-4 text-center items-center 
+transition-all duration-500
+hover:-translate-y-2 hover:border-[#5CC8FF]
+overflow-hidden;
+}
+
+.card_estatisticas::before{
+content:"";
+position:absolute;
+inset:0;
+background: radial-gradient(circle at top, rgba(92,200,255,0.15), transparent 70%);
+opacity:0;
+transition:opacity .5s;
+}
+
+.card_estatisticas:hover::before{
+opacity:1;
+}
+
+.icone_card{
+@apply text-3xl text-[#5CC8FF] mb-3;
+}
+
+.titulo_card_estatisticas{
+@apply font-geist font-semibold text-lg uppercase text-gray-300;
+}
+
+.valor_card_estatisticas{
+@apply font-geist font-black text-3xl;
+}
+
+.info_extra_card_estatisticas{
+@apply text-sm text-gray-400;
 }
