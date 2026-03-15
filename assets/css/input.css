@@ -72,7 +72,7 @@
 }
 
 .valor_card_estatisticas{
-    @apply font-geist font-black text-2xl;
+    @apply font-geist font-black text-2xl
 }
 
 .info_extra_card_estatisticas{
