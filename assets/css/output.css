@@ -216,6 +216,15 @@
   .z-20 {
     z-index: 20;
   }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
@@ -258,6 +267,9 @@
   .w-full {
     width: 100%;
   }
+  .w-max {
+    width: max-content;
+  }
   .w-screen {
     width: 100vw;
   }
@@ -269,6 +281,12 @@
   }
   .max-w-141\.25 {
     max-width: calc(var(--spacing) * 141.25);
+  }
+  .min-w-full {
+    min-width: 100%;
+  }
+  .min-w-max {
+    min-width: max-content;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -297,6 +315,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -331,6 +352,12 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
   }
   .border {
     border-style: var(--tw-border-style);
@@ -384,6 +411,15 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-13 {
+    padding-inline: calc(var(--spacing) * 13);
+  }
+  .px-14 {
+    padding-inline: calc(var(--spacing) * 14);
+  }
   .px-18 {
     padding-inline: calc(var(--spacing) * 18);
   }
@@ -428,8 +464,14 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#5CC8FF\] {
+    color: #5CC8FF;
+  }
   .text-\[\#E2E8F0\] {
     color: #E2E8F0;
+  }
+  .text-\[5CC8FF\] {
+    color: 5CC8FF;
   }
   .text-transparent {
     color: transparent;
@@ -493,6 +535,11 @@
       position: static;
     }
   }
+  .md\:mt-0 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+  }
   .md\:mt-10 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 10);
@@ -533,6 +580,11 @@
       width: auto;
     }
   }
+  .md\:min-w-auto {
+    @media (width >= 48rem) {
+      min-width: auto;
+    }
+  }
   .md\:translate-x-0 {
     @media (width >= 48rem) {
       --tw-translate-x: calc(var(--spacing) * 0);
@@ -542,6 +594,11 @@
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:flex-wrap {
+    @media (width >= 48rem) {
+      flex-wrap: wrap;
     }
   }
   .md\:rounded-full {
@@ -563,6 +620,11 @@
   .md\:bg-transparent {
     @media (width >= 48rem) {
       background-color: transparent;
+    }
+  }
+  .md\:px-0 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:px-10 {
