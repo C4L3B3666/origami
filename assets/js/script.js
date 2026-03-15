@@ -95,3 +95,23 @@ neuralAnim()
 document.querySelector("#menuHamburguer").addEventListener("click",()=> {
     document.querySelector("#menu").classList.toggle("active")
 })
+
+const faq = document.querySelectorAll(".faq_item");
+
+faq.forEach(item => {
+
+const btn = item.querySelector(".faq_pergunta");
+
+btn.addEventListener("click", () => {
+
+faq.forEach(el=>{
+if(el!==item){
+el.classList.remove("active");
+}
+});
+
+item.classList.toggle("active");
+
+});
+
+});
