@@ -118,3 +118,43 @@
 .faq_item.active{
     @apply border-[#5CC8FF33] shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_35px_rgba(92,200,255,0.08)]
 }
+
+.card_passos{
+    @apply border rounded-xl backdrop-blur-sm p-8 flex flex-col items-center text-center gap-4 w-70 relative transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] hover:-translate-y-1
+}
+
+.numero_passo{
+    @apply absolute -top-4 text-xs font-bold bg-[#030304] border border-[#191B20] px-3 py-1 rounded-full text-[#5CC8FF];
+}
+
+.icone_passo{
+    @apply text-3xl text-[#5CC8FF];
+}
+
+.titulo_passo{
+    @apply font-geist uppercase font-bold text-lg text-[#E2E8F0];
+}
+
+.descricao_passo{
+    @apply font-pop text-sm text-[#E2E8F0] opacity-80;
+}
+
+.linha_fluxo{
+    @apply w-17.5 h-0.5 bg-[linear-gradient(90deg,transparent,#5CC8FF,transparent)] opacity-40 absolute
+}
+
+.linha_fluxo_1 {
+    @apply top-35
+}
+
+.linha_fluxo_2 {
+    @apply bottom-25
+}
+
+.linha_fluxo_3 {
+    @apply left-47 top-72 rotate-90
+}
+
+.linha_fluxo_4 {
+    @apply right-47 top-72 rotate-90
+}
