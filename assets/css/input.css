@@ -120,7 +120,7 @@
 }
 
 .card_passos{
-    @apply border rounded-xl backdrop-blur-sm p-8 flex flex-col items-center text-center gap-4 w-70 relative transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] md:hover:-translate-y-1 
+    @apply border rounded-xl backdrop-blur-sm p-8 flex flex-col items-center text-center gap-4 w-70 relative transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] md:hover:-translate-y-1 before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px]
 }
 
 .numero_passo{
