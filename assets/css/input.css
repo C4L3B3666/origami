@@ -147,10 +147,6 @@
     @apply top-35
 }
 
-.linha_fluxo_2 {
-    @apply bottom-25
-}
-
 .linha_fluxo_3 {
     @apply left-47 top-72 rotate-90
 }

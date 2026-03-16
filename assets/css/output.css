@@ -1211,9 +1211,6 @@
 .linha_fluxo_1 {
   top: calc(var(--spacing) * 35);
 }
-.linha_fluxo_2 {
-  bottom: calc(var(--spacing) * 25);
-}
 .linha_fluxo_3 {
   top: calc(var(--spacing) * 72);
   left: calc(var(--spacing) * 47);
