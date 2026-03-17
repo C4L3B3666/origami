@@ -6,9 +6,14 @@
     --font-pop: "Poppins", system-ui, sans-serif;
 }
 
+.palavra_destaque {
+    @apply font-semibold
+}
+
 #menu.active {
     @apply translate-x-0;
 }
+
 .opcao_link_menu {
     @apply text-sm font-pop text-[#E2E8F0] hover:text-white transition-colors duration-300
 }
