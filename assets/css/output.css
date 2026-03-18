@@ -1450,6 +1450,16 @@
     }
   }
 }
+.texto_card_equipe {
+  font-family: var(--font-pop);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  --tw-font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  text-transform: uppercase;
+  opacity: 80%;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
