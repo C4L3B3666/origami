@@ -169,15 +169,33 @@
 }
 
 .card_parceiro {
-    @apply h-45 border rounded-xl p-6
+    @apply h-45 border rounded-xl
 }
 
 .card_parceiro_pequeno {
-    @apply w-60 hover:cursor-pointer border-[#191B20]
+    @apply min-w-60 md:w-60 hover:cursor-pointer border-none md:border-[#191B20] p-6 flex items-center justify-center overflow-hidden
+}
+
+@keyframes animacaoScroll {
+    0% { 
+        transform: translateX(0); 
+    }
+    
+    100% { 
+        transform: translateX(-50%); 
+    }
 }
 
 .card_parceiro_grande {
     @apply w-122 hidden md:flex items-center justify-center 
+}
+
+.imagem_logo_parceiro {
+    @apply grayscale-100 pointer-events-none opacity-95
+}
+
+.div_logo_parceiro_mobile {
+    @apply md:hidden
 }
 
 .link_termos_politica_menu {
