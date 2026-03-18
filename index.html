@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden bg-[#030304]">
 
     <section class="min-h-screen relative bg-[#0D0F14] overflow-hidden">
         <canvas id="neuralNet" class="absolute inset-0 z-0 pointer-events-none opacity-40"></canvas>
@@ -275,6 +275,38 @@
             </div>
         </div>
     </section>
+
+    <section class="bg-[#030304] px-10 flex flex-col gap-4 pb-30">
+        <div class="flex flex-col items-center justify-center text-center">
+            <h2 class="subtitulo md:max-w-4xl">conheça a neurania.</h2>
+        </div>
+        <div class="flex flex-col items-center">
+            <div class="relative rounded-2xl border border-[#191B20] h-165 w-[96%] md:w-212.5 flex items-center justify-center overflow-hidden group">
+                <div class="absolute inset-0 bg-[radial-gradient(circle,rgba(92,200,255,0.15),transparent_70%)] opacity-70 group-hover:opacity-100 transition"></div>
+            </div>
+            <span class="text-[#E2E8F0] font-pop opacity-85 mt-1 text-[12px] md:text-[13px] font-light text-center">Neurania é uma inteligência artificial em desenvolvimento.</span>
+        </div>
+    </section>
     
+    <footer class="px-10 md:px-25 bg-[linear-gradient(180deg,#030304_0%,#5cc9ff10_100%)]">
+        <nav class="flex flex-col md:flex-row md:justify-between items-center justify-center px-15">
+            <a href="#"><img src="assets/img/logo_full.png" alt="imagem da logo da origami" class="w-40"></a>
+            <nav class="flex gap-4 flex-row items-center flex-wrap justify-center mt-4 md:mt-0">
+                <a href="#" class="link_termos_politica_menu">Termos e Condições</a>
+                <a href="#"  class="link_termos_politica_menu">Políticas de Privacidade</a>
+            </nav>
+        </nav>
+        <hr class="border-[#E2E8F0] my-6 opacity-20">
+        <div class="flex md:justify-between justify-center pt-6 pb-6 items-center flex-col md:flex-row">
+            <address class="text-[#E2E8F0] font-geist font-light text-[13px]" style="font-style: normal;">Uíge, Uíge, Angola</address>
+            <nav class="flex md:gap-6 flex-wrap md:flex-nowrap items-center justify-center gap-2 mt-2 md:mt-0">
+                <a href="#" class="link_midia_social">Facebook</a>
+                <a href="#" class="link_midia_social">Instagram</a>
+                <a href="#" class="link_midia_social">YouTube</a>
+                <a href="#" class="link_midia_social">GitHub</a>
+            </nav>
+            <p class="text-[#E2E8F0] font-geist text-[13px]">&copy;2026 — <a href="#" class="hover:underline"><strong class="palavra_destaque">DominusCode</strong></a> — Todos os direitos reservados</p>
+        </div>
+    </footer>
 </body>
 </html>
