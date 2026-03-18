@@ -730,6 +730,12 @@
   .opacity-85 {
     opacity: 85%;
   }
+  .opacity-100 {
+    opacity: 100%;
+  }
+  .opacity-7000 {
+    opacity: 7000%;
+  }
   .mix-blend-lighten {
     mix-blend-mode: lighten;
   }
