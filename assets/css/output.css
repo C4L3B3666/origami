@@ -1572,8 +1572,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  --tw-border-style: none;
-  border-style: none;
+  border-color: transparent;
   padding: calc(var(--spacing) * 6);
   &:hover {
     @media (hover: hover) {
