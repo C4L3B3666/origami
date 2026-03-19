@@ -182,7 +182,7 @@
     }
     
     100% { 
-        transform: translateX(-50%); 
+        transform: translateX(-90%); 
     }
 }
 
@@ -204,4 +204,13 @@
 
 .link_midia_social {
     @apply text-[#E2E8F0] font-pop text-2xl font-bold
+}
+
+/* dash  */
+.botao_lado_dash {
+    @apply text-[#E2E8F0] font-pop font-semibold opacity-70 text-sm
+}
+
+.botao_lado_dash.ativo {
+    @apply opacity-100
 }
