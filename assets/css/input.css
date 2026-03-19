@@ -206,7 +206,7 @@
     @apply text-[#E2E8F0] font-pop text-2xl font-bold
 }
 
-/* dash  */
+/* Painel  */
 .botao_lado_dash {
     @apply text-[#E2E8F0] font-pop font-semibold opacity-70 text-sm cursor-pointer 
 }
