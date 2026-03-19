@@ -655,6 +655,15 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
   }
@@ -664,11 +673,20 @@
   .py-40 {
     padding-block: calc(var(--spacing) * 40);
   }
+  .py-50 {
+    padding-block: calc(var(--spacing) * 50);
+  }
   .pt-6 {
     padding-top: calc(var(--spacing) * 6);
   }
   .pt-15 {
     padding-top: calc(var(--spacing) * 15);
+  }
+  .pt-18 {
+    padding-top: calc(var(--spacing) * 18);
+  }
+  .pt-20 {
+    padding-top: calc(var(--spacing) * 20);
   }
   .pt-35 {
     padding-top: calc(var(--spacing) * 35);
