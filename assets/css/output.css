@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -552,6 +553,9 @@
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
+  }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
     @supports (background-image: linear-gradient(in lab, red, red)) {
@@ -1001,10 +1005,28 @@
       position: absolute;
     }
   }
+  .after\:-right-1 {
+    &::after {
+      content: var(--tw-content);
+      right: calc(var(--spacing) * -1);
+    }
+  }
+  .after\:-right-2 {
+    &::after {
+      content: var(--tw-content);
+      right: calc(var(--spacing) * -2);
+    }
+  }
   .after\:right-0 {
     &::after {
       content: var(--tw-content);
       right: calc(var(--spacing) * 0);
+    }
+  }
+  .after\:right-1 {
+    &::after {
+      content: var(--tw-content);
+      right: calc(var(--spacing) * 1);
     }
   }
   .after\:bottom-0 {
