@@ -211,8 +211,56 @@
 }
 
 /* Painel  */
+.card_info_painel {
+    @apply border border-[#191B20] h-35 w-70 rounded-lg py-3 px-5 gap-4 flex flex-col
+}
+
+.div_topo_card_info_painel {
+    @apply flex justify-between 
+}
+
+.titulo_card_info_painel {
+    @apply font-pop uppercase font-semibold opacity-75 
+}
+
+.icone_card_painel {
+    @apply text-[#E2E8F0] opacity-75 
+} 
+
+.valor_card_info_painel {
+    @apply text-center font-geist uppercase font-bold text-[27px] opacity-90 
+}
+
+.div_bottom_card_info_painel {
+    @apply flex items-center justify-center gap-0.5 text-green-400
+}
+
+.valor_ganho_diario {
+    @apply font-geist font-medium
+}
+
+.nav_area_lucro {
+    @apply flex gap-3.5 
+}
+
+.posicao_area_lucro {
+    @apply font-pop font-bold 
+}
+
+.area_investimento_lucro {
+    @apply font-semibold opacity-90 font-pop
+}
+
+.lucro_area_investimento {
+    @apply text-green-400 opacity-80 font-geist text-sm font-semibold
+}
+
 .botao_lado_dash {
-    @apply text-[#E2E8F0] font-pop font-semibold opacity-70 text-sm cursor-pointer 
+    @apply text-[#E2E8F0] font-pop font-semibold opacity-70 text-sm cursor-pointer flex gap-2 items-center
+}
+
+.icone_botao_lado_dash {
+    @apply text-[18px]
 }
 
 .botao_lado_dash.ativo {

@@ -14,13 +14,13 @@
             <nav class="flex flex-col gap-6">
                 <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-50"></a>
                 <nav class="flex flex-col items-start mt-3 gap-6">
-                    <button class="botao_lado_dash">OriPainel</button>
-                    <button class="botao_lado_dash">Saldo</button>
-                    <button class="botao_lado_dash ativo">Ganhos</button>
-                    <button class="botao_lado_dash">Saques</button>
-                    <button class="botao_lado_dash">Exchanges</button>
-                    <button class="botao_lado_dash">Investimento</button>
-                    <button class="botao_lado_dash">Configurações</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>OriPainel</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Saldo</button>
+                    <button class="botao_lado_dash ativo"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Ganhos</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Saques</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Exchanges</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Investimento</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Configurações</button>
                 </nav>
             </nav>
             <div class="flex flex-col gap-4">
@@ -31,7 +31,7 @@
                         <span class="text-[#E2E8F0] font-pop font-medium text-[12px]">999 021 321</span>
                     </div>
                 </div>
-                <button class="bg-red-500 font-pop px-4 py-1 rounded-full text-[#E2E8F0] text-sm shadow-[0_0_15px_#fb2c36]">Terminar Sessão</button>
+                <button class="bg-red-500 font-pop px-4 py-1 rounded-full text-[#E2E8F0] text-sm shadow-[0_0_15px_#fb2c36] cursor-pointer">Terminar Sessão</button>
             </div>
         </aside>
 
@@ -41,48 +41,99 @@
                 <span class="font-pop text-sm text-[#E2E8F0] opacity-70">Nsimba, é uma honra saber que você está crescendo com a Origami.</span>
             </div>
             <div class="p-5 flex gap-6">
-                <nav class="border border-[#191B20] h-35 w-70 rounded-lg"></nav>
-                <nav class="border border-[#191B20] h-35 w-70 rounded-lg"></nav>
-                <nav class="border border-[#191B20] h-35 w-70 rounded-lg"></nav>
-                <nav class="border border-[#191B20] h-35 w-70 rounded-lg"></nav>
+                <nav class="card_info_painel">
+                    <div class="div_topo_card_info_painel">
+                        <h5 class="titulo_card_info_painel">Saldo Disponível (KZs)</h5>
+                        <i class="fa-solid fa-wallet icone_card_painel"></i>
+                    </div>
+                    <div>
+                        <h6 class="valor_card_info_painel">2 500 452,32</h6>
+                    </div>
+                    <div class="div_bottom_card_info_painel">
+                        <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                        <span class="valor_ganho_diario">+12.5% hoje</span>
+                    </div>
+                </nav>
+
+                <nav class="card_info_painel">
+                    <div class="div_topo_card_info_painel">
+                        <h5 class="titulo_card_info_painel">Valor Investido (KZs)</h5>
+                        <i class="fa-solid fa-wallet icone_card_painel"></i>
+                    </div>
+                    <div>
+                        <h6 class="valor_card_info_painel">250 145</h6>
+                    </div>
+                    <div class="div_bottom_card_info_painel">
+                        <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                        <span class="valor_ganho_diario">+1.5% de bónus</span>
+                    </div>
+                </nav>
+
+                <nav class="card_info_painel">
+                    <div class="div_topo_card_info_painel">
+                        <h5 class="titulo_card_info_painel">Ganhos (%)</h5>
+                        <i class="fa-solid fa-wallet icone_card_painel"></i>
+                    </div>
+                    <div>
+                        <h6 class="valor_card_info_painel">2 522</h6>
+                    </div>
+                    <div class="div_bottom_card_info_painel">
+                        <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                        <span class="valor_ganho_diario">+31.2% mensalmente</span>
+                    </div>
+                </nav>
+                
+                <nav class="card_info_painel">
+                    <div class="div_topo_card_info_painel">
+                        <h5 class="titulo_card_info_painel">Valor Levantado (KZs)</h5>
+                        <i class="fa-solid fa-wallet icone_card_painel"></i>
+                    </div>
+                    <div>
+                        <h6 class="valor_card_info_painel">1 250 000</h6>
+                    </div>
+                    <div class="div_bottom_card_info_painel">
+                        <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                        <span class="valor_ganho_diario">+1.01% hoje</span>
+                    </div>
+                </nav>
             </div>
             <div class="p-5 flex gap-6">
                 <nav class="border border-[#191B20] h-112 w-190 rounded-lg"></nav>
                 <nav class="border border-[#191B20] h-112 w-102 rounded-lg p-6">
-                    <img src="../assets/img/logo_icone.png" alt="" srcset="" class="w-10">
-                    <h5 class="font-geist text-[20px] uppercase font-black leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">Saiba onde a Origami lucrou (hoje)</h6>
+                    <h5 class="text-[20px] font-pop uppercase font-semibold opacity-75">Saiba onde a Origami lucrou (hoje)</h6>
                     <div class="mt-4 flex flex-col gap-6">
-                        <nav class="flex gap-3.5">
-                            <span class="font-pop font-bold">#1</span>
+                        <nav class="nav_area_lucro">
+                            <span class="posicao_area_lucro">#1</span>
                             <div class="flex flex-col">
-                                <h6 class="font-semibold opacity-75 font-pop text-[#E2E8F0]">Criptomoedas (Bitcoin, CARDANO, Monero, Litecoin e Etherium)</h6>
-                                <span class="text-[#5CC8FF] opacity-80 font-pop text-sm font-semibold">1 381 318 KZs (8.43%)</span>
-                            </div>
-                        </nav>
-                        
-                        <nav class="flex gap-3.5">
-                            <span class="font-pop font-bold">#2</span>
-                            <div class="flex flex-col">
-                                <h6 class="font-semibold opacity-75 font-pop text-[#E2E8F0]">NFTs</h6>
-                                <span class="text-[#5CC8FF] opacity-80 font-pop text-sm font-semibold">1 381 318 KZs (8.43%)</span>
+                                <h6 class="area_investimento_lucro">Criptomoedas</h6>
+                                <span class="lucro_area_investimento">1 381 318 KZs (8.43%)</span>
                             </div>
                         </nav>
 
-                        <nav class="flex gap-3.5">
-                            <span class="font-pop font-bold">#3</span>
+                        <nav class="nav_area_lucro">
+                            <span class="posicao_area_lucro">#2</span>
                             <div class="flex flex-col">
-                                <h6 class="font-semibold opacity-75 font-pop text-[#E2E8F0]">Bolsas De Valores</h6>
-                                <span class="text-[#5CC8FF] opacity-80 font-pop text-sm font-semibold">1 381 318 KZs (8.43%)</span>
+                                <h6 class="area_investimento_lucro">NFTs</h6>
+                                <span class="lucro_area_investimento">1 381 318 KZs (8.43%)</span>
                             </div>
                         </nav>
 
-                        <nav class="flex gap-3.5">
-                            <span class="font-pop font-bold">#4</span>
+                        <nav class="nav_area_lucro">
+                            <span class="posicao_area_lucro">#3</span>
                             <div class="flex flex-col">
-                                <h6 class="font-semibold opacity-75 font-pop text-[#E2E8F0]">Outro</h6>
-                                <span class="text-[#5CC8FF] opacity-80 font-pop text-sm font-semibold">1 381 318 KZs (8.43%)</span>
+                                <h6 class="area_investimento_lucro">Bolsas de Valores</h6>
+                                <span class="lucro_area_investimento">1 381 318 KZs (8.43%)</span>
                             </div>
                         </nav>
+
+                        <nav class="nav_area_lucro">
+                            <span class="posicao_area_lucro">#4</span>
+                            <div class="flex flex-col">
+                                <h6 class="area_investimento_lucro">Outros</h6>
+                                <span class="lucro_area_investimento">1 381 318 KZs (8.43%)</span>
+                            </div>
+                        </nav>
+
                     </div>
                 </nav>
             </div>
