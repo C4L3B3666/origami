@@ -1564,17 +1564,22 @@
   border-radius: calc(infinity * 1px);
   border-style: var(--tw-border-style);
   border-width: 1px;
-  border-color: #191B20;
+  border-color: transparent;
   color: #E2E8F0;
   opacity: 80%;
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
+  @media (width >= 48rem) {
+    border-color: #191B20;
+  }
 }
 .faq_item:hover .faq_icon {
-  border-color: #5CC8FF;
   color: #5CC8FF;
   opacity: 100%;
+  @media (width >= 48rem) {
+    border-color: #5CC8FF;
+  }
 }
 .faq_resposta {
   max-height: calc(var(--spacing) * 0);

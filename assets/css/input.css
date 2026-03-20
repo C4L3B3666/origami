@@ -101,11 +101,11 @@
 }
 
 .faq_icon {
-    @apply w-9 h-9 rounded-full flex items-center justify-center border border-[#191B20] text-[#E2E8F0] opacity-80 transition
+    @apply w-9 h-9 rounded-full flex items-center justify-center border-transparent md:border-[#191B20] border text-[#E2E8F0] opacity-80 transition
 }
 
 .faq_item:hover .faq_icon {
-    @apply border-[#5CC8FF] text-[#5CC8FF] opacity-100
+    @apply md:border-[#5CC8FF] text-[#5CC8FF] opacity-100
 }
 
 .faq_resposta {
