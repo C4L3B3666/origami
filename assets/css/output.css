@@ -253,6 +253,9 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
   .flex {
     display: flex;
   }
@@ -422,6 +425,9 @@
   }
   .justify-start {
     justify-content: flex-start;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -617,6 +623,9 @@
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .py-30 {
     padding-block: calc(var(--spacing) * 30);
   }
@@ -742,6 +751,9 @@
   }
   .opacity-85 {
     opacity: 85%;
+  }
+  .opacity-95 {
+    opacity: 95%;
   }
   .opacity-100 {
     opacity: 100%;
@@ -2003,8 +2015,89 @@
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-green-400);
 }
-#saldoDisponivel, #saldoGanho, #saldoLevantado {
+#saldoDisponivel, #saldoInvestido, #saldoGanho, #saldoLevantado {
   display: none;
+}
+.card_info_config {
+  position: relative;
+  display: flex;
+  height: calc(var(--spacing) * 40);
+  width: calc(var(--spacing) * 70);
+  flex-direction: column;
+  align-items: center;
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #5cc9ff2d;
+  padding: calc(var(--spacing) * 2);
+  text-align: center;
+  --tw-shadow: 0 0 0 1px var(--tw-shadow-color, rgba(92,200,255,0.15)), 0 0 5px var(--tw-shadow-color, rgba(92,200,255,0.08));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  --tw-backdrop-blur: blur(var(--blur-sm));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
+  &::before {
+    content: var(--tw-content);
+    pointer-events: none;
+  }
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    inset: calc(var(--spacing) * 0);
+  }
+  &::before {
+    content: var(--tw-content);
+    background-image: radial-gradient(circle at top,rgba(92,200,255,0.15),transparent 70%);
+  }
+  &::before {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+  &::before {
+    content: var(--tw-content);
+    --tw-blur: blur(25px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  @media (width >= 48rem) {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * 1);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+}
+.titulo_card_config {
+  margin-bottom: calc(var(--spacing) * 1.5);
+  font-family: var(--font-geist);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: #5CC8FF;
+  text-transform: uppercase;
+  opacity: 85%;
+}
+.dado_card_config {
+  text-align: center;
+  font-family: var(--font-pop);
+}
+.btn_config {
+  margin-top: calc(var(--spacing) * 2);
+  cursor: pointer;
+  border-radius: var(--radius-lg);
+  border-color: #154466;
+  background-color: #154466;
+  padding-inline: calc(var(--spacing) * 1);
+  font-family: var(--font-pop);
+  --tw-shadow: 0 0 15px var(--tw-shadow-color, #154466);
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 @property --tw-translate-x {
   syntax: "*";

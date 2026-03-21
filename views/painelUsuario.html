@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative hidden">
                 <div class="absolute inset-0 pointer-events-none z-0 animate-[gridMove_20s_linear_infinite] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[60px_60px] h-screen"></div>
                 <div class="absolute inset-0 pointer-events-none z-0 h-screen" style="background-image: radial-gradient(circle at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 90%);"></div>
 
@@ -184,6 +184,52 @@
                         <span class="valor_aumento_diario">+1.1% hoje</span>
                     </div>
                     <p class="texto_secao_dash">Continue confiando na Origami e veja o patamar financeiro a crescer!</p>
+                </div>
+            </div>
+
+            <div class="relative px-6 py-5" id="divConfiguracoes">
+                <h2 class="font-pop uppercase font-bold text-3xl opacity-75">Configurações do utilizador</h2>
+                <div class="flex flex-col mt-6 gap-6">
+                    <div>
+                        <h3 class="font-pop font-semibold opacity-95">As suas informações</h3>
+                        <div class="flex gap-4">
+                            <div class="card_info_config">
+                                <div class="flex flex-col gap-1">
+                                    <h4 class="titulo_card_config">Nome Investidor</h4>
+                                    <span class="dado_card_config nome_utilizador">Nsimba</span>
+                                    <span class="dado_card_config nome_utilizador">Mateus</span>
+                                    <button class="btn_config">Alterar Nome</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card_info_config">
+                                <h4 class="titulo_card_config">Núm. de Telefone</h4>
+                                <span class="dado_card_config telefone_utilizador">999 021 321</span>
+                                <button class="btn_config">Alterar Número</button>
+                            </div>
+                            
+                            <div class="card_info_config">
+                                <h4 class="titulo_card_config">Número Internacional da Conta Bancária (IBAN)</h4>
+                                <span class="dado_card_config iban_utilizador">000.300190.38019.991.381818</span>
+                                <button class="btn_config">Alterar IBAN</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-pop font-semibold opacity-95">Segurança</h3>
+                        <div class="flex gap-4">
+                            <div class="card_info_config">
+                                <div class="flex flex-col gap-1">
+                                    <h4 class="titulo_card_config">Palavra-Passe</h4>
+                                    <span class="dado_card_config nome_utilizador">Palavra-Passe Antiga</span>
+                                    <span class="dado_card_config nome_utilizador">Palavra-Passe Nova</span>
+                                    <button class="btn_config">Alterar Palavra-Passe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

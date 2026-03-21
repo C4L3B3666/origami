@@ -287,6 +287,22 @@
     @apply font-geist text-sm text-green-400
 }
 
-#saldoDisponivel, #saldoGanho, #saldoLevantado {
+#saldoDisponivel, #saldoInvestido, #saldoGanho, #saldoLevantado {
     @apply hidden
+}
+
+.card_info_config {
+    @apply w-70 h-40 p-2 before:pointer-events-none border rounded-lg backdrop-blur-sm relative flex flex-col text-center items-center transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] md:hover:translate-y-1 before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px]
+}
+
+.titulo_card_config {
+    @apply font-geist font-bold uppercase opacity-85 text-[#5CC8FF] mb-1.5
+}
+
+.dado_card_config {
+    @apply font-pop text-center
+}
+
+.btn_config {
+    @apply bg-[#154466] shadow-[0_0_15px_#154466] border-[#154466] rounded-lg font-pop px-1 cursor-pointer mt-2
 }
