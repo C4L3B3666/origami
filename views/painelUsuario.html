@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="overflow-hidden bg-[#030304]">
+<body class="md:overflow-hidden overflow-x-hidden bg-[#030304]">
     <div class="flex h-screen">
-        <aside class="border-r border-r-[#191B20] p-9 flex flex-col items-start justify-between min-w-67.5">
+        <aside class="absolute hidden md:flex md:static border-r border-r-[#191B20] p-9 flex-col items-start justify-between min-w-67.5">
             <nav class="flex flex-col gap-6">
                 <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-50"></a>
                 <nav class="flex flex-col items-start mt-3 gap-6">
@@ -35,14 +35,14 @@
             </div>
         </aside>
 
-        <section class="text-white">
+        <section class="text-white w-screen">
             <div class="border-b border-b-[#191B20] min-w-screen p-5">
                 <h1 class="font-geist uppercase font-black text-3xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">O Seu OriPainel</h1>
                 <span class="font-pop text-sm text-[#E2E8F0] opacity-70">Nsimba, é uma honra saber que você está crescendo com a Origami.</span>
             </div>
 
-            <div class="inicio_dash hidden">
-                <div class="p-5 flex gap-6">
+            <div class="inicio_dash">
+                <div class="p-5 flex gap-6 min-w-max justify-center md:justify-start">
                     <nav class="card_info_painel">
                         <div class="div_topo_card_info_painel">
                             <h5 class="titulo_card_info_painel">Saldo Disponível (KZs)</h5>
@@ -100,9 +100,9 @@
                     </nav>
                 </div>
 
-                <div class="p-5 flex gap-6">
-                    <nav class="border border-[#191B20] h-112 w-190 rounded-lg"></nav>
-                    <nav class="border border-[#191B20] h-112 w-102 rounded-lg p-6">
+                <div class="p-5 flex gap-4 md:gap-6 flex-col md:flex-row">
+                    <nav class="border border-[#191B20] h-112 md:w-190 rounded-lg"></nav>
+                    <nav class="border border-[#191B20] h-112 md:w-102 rounded-lg p-6">
                         <h5 class="text-[20px] font-pop uppercase font-semibold opacity-75">Saiba onde a Origami lucrou (hoje)</h6>
                         <div class="mt-4 flex flex-col gap-6">
                             <nav class="nav_area_lucro">
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <div class="relative px-6 py-5" id="divConfiguracoes">
+            <div class="relative px-6 py-5 hidden" id="divConfiguracoes">
                 <h2 class="font-pop uppercase font-bold text-3xl opacity-75">Configurações do utilizador</h2>
                 <div class="flex flex-col mt-6 gap-6">
                     <div>
