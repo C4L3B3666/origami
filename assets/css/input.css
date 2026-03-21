@@ -252,7 +252,7 @@
 }
 
 .lucro_area_investimento {
-    @apply text-green-400 opacity-80 font-geist text-sm font-semibold
+    @apply text-green-400 opacity-70 font-geist text-sm font-semibold
 }
 
 .botao_lado_dash {
