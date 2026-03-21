@@ -266,3 +266,23 @@
 .botao_lado_dash.ativo {
     @apply opacity-100
 }
+
+.secao_lado_dashboard {
+    @apply flex flex-col items-center justify-center text-center w-300 h-full mt-10 gap-35
+}
+
+.titulo_secao_dash {
+    @apply font-geist text-[65px] font-bold uppercase opacity-85
+}
+
+.valor_saldo_dash {
+    @apply font-geist text-[75px] font-bold uppercase
+}
+
+.texto_secao_dash {
+    @apply font-geist text-sm text-[#E2E8F0] opacity-75
+}
+
+.valor_aumento_diario {
+    @apply font-geist text-sm text-green-400
+}
