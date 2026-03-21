@@ -272,7 +272,7 @@
 }
 
 .titulo_secao_dash {
-    @apply font-geist text-[65px] font-bold uppercase opacity-85
+    @apply font-pop text-[65px] font-bold uppercase opacity-85
 }
 
 .valor_saldo_dash {
