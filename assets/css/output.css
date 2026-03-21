@@ -2003,7 +2003,7 @@
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-green-400);
 }
-#saldoDisponivel {
+#saldoDisponivel, #saldoGanho, #saldoLevantado {
   display: none;
 }
 @property --tw-translate-x {

@@ -287,6 +287,6 @@
     @apply font-geist text-sm text-green-400
 }
 
-#saldoDisponivel {
+#saldoDisponivel, #saldoGanho, #saldoLevantado {
     @apply hidden
 }
