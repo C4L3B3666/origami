@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <title>Origami | OriPainel Administrador</title>
+    <script src="../assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="md:overflow-hidden overflow-x-hidden bg-[#030304]">
+    <div class="flex h-screen">
+        <aside class="absolute md:flex md:static border-r border-r-[#191B20] p-9 flex-col items-start justify-between md:min-w-67.5 min-w-screen bg-[#191b2062] backdrop-blur-2xl md:bg-transparent min-h-screen z-10 md:z-0 -translate-y-full md:translate-0 pointer-events-none md:pointer-events-auto opacity-0 md:opacity-100">
+            <nav class="flex flex-col gap-6">
+                <nav class="flex items-center justify-between">
+                    <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-50"></a>
+                    <button class="bg-red-500 h-7 w-7 text-white rounded-full md:hidden text-sm shadow-[0_0_15px_#fb2c36]">X</button>
+                </nav>
+                <nav class="flex flex-col items-start mt-3 gap-6">
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>OriPainel</button>
+                    <button class="botao_lado_dash ativo"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Total Arrecadado</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Saldo Sacado</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Total de Usuários</button>
+                    <button class="botao_lado_dash"><i class="fa-solid fa-piggy-bank icone_botao_lado_dash"></i>Configurações</button>
+                </nav>
+            </nav>
+            <div class="flex flex-col gap-5 md:gap-4 mt-8 md:mt-auto">
+                <div class="flex gap-2">
+                    <div class="h-10 w-10 rounded-full bg-[#9CA0A6] text-[#030304] flex items-center justify-center font-geist font-semibold">DM</div>
+                    <div class="flex flex-col">
+                        <span class="text-[#E2E8F0] font-pop font-bold opacity-70 text-sm">Dominus</span>
+                        <span class="text-[#E2E8F0] font-pop font-medium text-[12px]">999 021 321</span>
+                    </div>
+                </div>
+                <button class="bg-red-500 font-pop px-4 py-1 rounded-full text-[#E2E8F0] text-sm shadow-[0_0_15px_#fb2c36] cursor-pointer">Terminar Sessão</button>
+            </div>
+        </aside>
+
+        <section class="text-white w-screen">
+            <div class="border-b border-b-[#191B20] min-w-screen px-10 py-1.5 md:p-5">
+                <div class="flex items-center justify-between">
+                    <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-35 md:hidden"></a>
+                    <button class="bg-red-500 h-7 w-7 text-white rounded-full md:hidden text-sm shadow-[0_0_15px_#fb2c36]">+</button>
+                </div>
+                <h1 class="font-geist uppercase font-black text-3xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">Olá, Sr. Dominus</h1>
+                <span class="font-pop text-sm text-[#E2E8F0] opacity-70">Você agora é um milionário! Desfrute o melhor da porra da tua vida.</span>
+            </div>
+
+            <div class="inicio_dash">
+                <div class="p-5 flex gap-6 min-w-max justify-center md:justify-start">
+                    <nav class="card_info_painel">
+                        <div class="div_topo_card_info_painel">
+                            <h5 class="titulo_card_info_painel">Saldo Arrecadado (KZs)</h5>
+                            <i class="fa-solid fa-wallet icone_card_painel"></i>
+                        </div>
+                        <div>
+                            <h6 class="valor_card_info_painel">200 500 452,32</h6>
+                        </div>
+                        <div class="div_bottom_card_info_painel">
+                            <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                            <span class="valor_ganho_diario">+120.5% hoje</span>
+                        </div>
+                    </nav>
+                    
+                    <nav class="card_info_painel">
+                        <div class="div_topo_card_info_painel">
+                            <h5 class="titulo_card_info_painel">Total Sacado (KZs)</h5>
+                            <i class="fa-solid fa-wallet icone_card_painel"></i>
+                        </div>
+                        <div>
+                            <h6 class="valor_card_info_painel">2 050 145</h6>
+                        </div>
+                        <div class="div_bottom_card_info_painel">
+                            <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                            <span class="valor_ganho_diario">+15% por dia</span>
+                        </div>
+                    </nav>
+                    
+                    <nav class="card_info_painel">
+                        <div class="div_topo_card_info_painel">
+                            <h5 class="titulo_card_info_painel">Total de Usuários</h5>
+                            <i class="fa-solid fa-wallet icone_card_painel"></i>
+                        </div>
+                        <div>
+                            <h6 class="valor_card_info_painel">206 522</h6>
+                        </div>
+                        <div class="div_bottom_card_info_painel">
+                            <i class="fa-solid fa-money-bill-trend-up icone_card_painel_bottom"></i>
+                            <span class="valor_ganho_diario">+91.22% por dia</span>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="p-5 flex gap-4 md:gap-6 flex-col md:flex-row">
+                    <nav class="border border-[#191B20] h-112 md:w-190 rounded-lg"></nav>
+                </div>
+            </div>
+
+            <div class="relative overflow-y-hidden md:overflow-y-visible hidden">
+                <div class="absolute inset-0 pointer-events-none z-0 animate-[gridMove_20s_linear_infinite] bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-size-[60px_60px] h-screen"></div>
+                <div class="absolute inset-0 pointer-events-none z-0 h-screen" style="background-image: radial-gradient(circle at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.8) 90%);"></div>
+
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                    <div class="h-120 md:h-160 w-50 md:w-160 bg-[radial-gradient(circle,rgba(92,200,255,0.25)0%,rgba(92,200,255,0.1)_40%,transparent_70%)] animate-[luzFundo_8s_ease_infinite_alternate] blur-[120px]"></div>
+                </div>
+                
+                <div class="secao_lado_dashboard" id="saldoDisponivel">
+                    <h2 class="titulo_secao_dash">Total Arrecadado (KZs)</h2>
+                    <div>
+                        <span class="valor_saldo_dash">200 500 452,32</span>
+                        <span class="valor_aumento_diario">+120.5% hoje</span>
+                    </div>
+                    <p class="texto_secao_dash">Você agora é um super milionário!</p>
+                </div>
+
+                <div class="secao_lado_dashboard" id="saldoInvestido">
+                    <h2 class="titulo_secao_dash">Total Sacado (KZs)</h2>
+                    <div>
+                        <span class="valor_saldo_dash">2 050 145</span>
+                        <span class="valor_aumento_diario">+15% por dia</span>
+                    </div>
+                    <p class="texto_secao_dash">Continue confiando na Origami e veja o patamar financeiro a crescer!</p>
+                </div>
+
+                <div class="secao_lado_dashboard" id="saldoGanho">
+                    <h2 class="titulo_secao_dash">Total de Usuários</h2>
+                    <div>
+                        <span class="valor_saldo_dash">2 522</span>
+                        <span class="valor_aumento_diario">+91.22% por mês</span>
+                    </div>
+                    <p class="texto_secao_dash">Continue confiando na Origami e veja o patamar financeiro a crescer!</p>
+                </div>
+            </div>
+
+            <div class="relative px-9 md:px-6 py-5 hidden" id="divConfiguracoes">
+                <h2 class="font-pop uppercase font-bold text-3xl opacity-75">Configurações do utilizador</h2>
+                <div class="flex flex-col mt-6 gap-6">
+                    <div>
+                        <h3 class="font-pop font-semibold opacity-95">As suas informações</h3>
+                        <div class="flex min-w-max gap-4">
+                            <div class="card_info_config">
+                                <div class="flex flex-col gap-1">
+                                    <h4 class="titulo_card_config">Nome Investidor</h4>
+                                    <span class="dado_card_config nome_utilizador">Nsimba</span>
+                                    <span class="dado_card_config nome_utilizador">Mateus</span>
+                                    <button class="btn_config">Alterar Nome</button>
+                                </div>
+                            </div>
+                            
+                            <div class="card_info_config">
+                                <h4 class="titulo_card_config">Núm. de Telefone</h4>
+                                <span class="dado_card_config telefone_utilizador">999 021 321</span>
+                                <button class="btn_config">Alterar Número</button>
+                            </div>
+                            
+                            <div class="card_info_config">
+                                <h4 class="titulo_card_config">Número Internacional da Conta Bancária (IBAN)</h4>
+                                <span class="dado_card_config iban_utilizador">000.300190.38019.991.381818</span>
+                                <button class="btn_config">Alterar IBAN</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="font-pop font-semibold opacity-95">Segurança</h3>
+                        <div class="flex gap-4">
+                            <div class="card_info_config">
+                                <div class="flex flex-col gap-1">
+                                    <h4 class="titulo_card_config">Palavra-Passe</h4>
+                                    <span class="dado_card_config nome_utilizador">Palavra-Passe Antiga</span>
+                                    <span class="dado_card_config nome_utilizador">Palavra-Passe Nova</span>
+                                    <button class="btn_config">Alterar Palavra-Passe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
