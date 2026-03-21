@@ -316,6 +316,9 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-35 {
+    width: calc(var(--spacing) * 35);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
@@ -325,9 +328,6 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
-  .w-102 {
-    width: calc(var(--spacing) * 102);
-  }
   .w-150 {
     width: calc(var(--spacing) * 150);
   }
@@ -336,9 +336,6 @@
   }
   .w-175 {
     width: calc(var(--spacing) * 175);
-  }
-  .w-190 {
-    width: calc(var(--spacing) * 190);
   }
   .w-225 {
     width: calc(var(--spacing) * 225);
@@ -481,8 +478,8 @@
   .overflow-x-hidden {
     overflow-x: hidden;
   }
-  .overflow-x-scroll {
-    overflow-x: scroll;
+  .overflow-y-hidden {
+    overflow-y: hidden;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
@@ -617,9 +614,6 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
-  .px-2\.5 {
-    padding-inline: calc(var(--spacing) * 2.5);
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -649,6 +643,9 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -1067,11 +1064,6 @@
       border-color: #154466;
     }
   }
-  .md\:relative {
-    @media (width >= 48rem) {
-      position: relative;
-    }
-  }
   .md\:static {
     @media (width >= 48rem) {
       position: static;
@@ -1125,6 +1117,11 @@
   .md\:h-auto {
     @media (width >= 48rem) {
       height: auto;
+    }
+  }
+  .md\:h-screen {
+    @media (width >= 48rem) {
+      height: 100vh;
     }
   }
   .md\:w-14 {
@@ -1261,6 +1258,16 @@
   .md\:overflow-hidden {
     @media (width >= 48rem) {
       overflow: hidden;
+    }
+  }
+  .md\:overflow-y-auto {
+    @media (width >= 48rem) {
+      overflow-y: auto;
+    }
+  }
+  .md\:overflow-y-visible {
+    @media (width >= 48rem) {
+      overflow-y: visible;
     }
   }
   .md\:rounded-full {
@@ -2053,34 +2060,44 @@
   margin-top: calc(var(--spacing) * 10);
   display: flex;
   height: 100%;
-  width: calc(var(--spacing) * 300);
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: calc(var(--spacing) * 35);
   text-align: center;
+  @media (width >= 48rem) {
+    width: calc(var(--spacing) * 300);
+  }
 }
 .titulo_secao_dash {
   font-family: var(--font-pop);
-  font-size: 65px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   opacity: 85%;
+  @media (width >= 48rem) {
+    font-size: 65px;
+  }
 }
 .valor_saldo_dash {
   font-family: var(--font-geist);
-  font-size: 75px;
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
+  @media (width >= 48rem) {
+    font-size: 75px;
+  }
 }
 .texto_secao_dash {
+  width: 60%;
   font-family: var(--font-geist);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: #E2E8F0;
   opacity: 75%;
+  @media (width >= 48rem) {
+    width: 90%;
+  }
 }
 .valor_aumento_diario {
   font-family: var(--font-geist);
@@ -2088,7 +2105,7 @@
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-green-400);
 }
-#saldoDisponivel, #saldoInvestido, #saldoGanho, #saldoLevantado {
+#saldoInvestido, #saldoGanho, #saldoLevantado {
   display: none;
 }
 .card_info_config {
