@@ -2003,6 +2003,9 @@
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-green-400);
 }
+#saldoDisponivel {
+  display: none;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
