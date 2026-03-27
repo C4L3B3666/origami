@@ -207,7 +207,7 @@
 }
 
 .link_social_media {
-    @apply text-[#E2E8F0] text-[27px] opacity-80 hover:opacity-100 transition-opacity duration-300
+    @apply text-[#E2E8F0] text-[27px] opacity-80 hover:opacity-100 active:opacity-100 transition-opacity duration-300
 }
 
 /* Painel  */
