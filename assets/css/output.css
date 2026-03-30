@@ -721,6 +721,9 @@
   .text-\[41px\] {
     font-size: 41px;
   }
+  .text-\[80px\] {
+    font-size: 80px;
+  }
   .leading-tight {
     --tw-leading: var(--leading-tight);
     line-height: var(--leading-tight);
