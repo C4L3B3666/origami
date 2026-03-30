@@ -11,7 +11,6 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-500: oklch(72.3% 0.219 149.579);
-    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -289,8 +288,8 @@
   .h-65 {
     height: calc(var(--spacing) * 65);
   }
-  .h-112 {
-    height: calc(var(--spacing) * 112);
+  .h-105 {
+    height: calc(var(--spacing) * 105);
   }
   .h-120 {
     height: calc(var(--spacing) * 120);
@@ -2036,6 +2035,11 @@
   padding-block: calc(var(--spacing) * 3);
   --tw-shadow: 0 0 0 1px var(--tw-shadow-color, rgba(92,200,255,0.15)), 0 0 5px var(--tw-shadow-color, rgba(92,200,255,0.08));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
   &::before {
     content: var(--tw-content);
     pointer-events: none;
@@ -2058,8 +2062,14 @@
   }
   &::before {
     content: var(--tw-content);
-    --tw-blur: blur(25px);
+    --tw-blur: blur(5px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-translate-y: calc(var(--spacing) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
   }
 }
 .div_topo_card_info_painel {
