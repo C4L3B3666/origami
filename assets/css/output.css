@@ -2029,6 +2029,7 @@
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: #E2E8F0;
+  opacity: 90%;
   --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
@@ -2044,23 +2045,18 @@
   flex-direction: column;
   align-items: center;
   gap: calc(var(--spacing) * 4);
-  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border-radius: var(--radius-xl);
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: #191B20;
   padding-inline: calc(var(--spacing) * 5);
   padding-block: calc(var(--spacing) * 3);
-  --tw-shadow: 0 0 0 1px var(--tw-shadow-color, rgba(92,200,255,0.15)), 0 0 5px var(--tw-shadow-color, rgba(92,200,255,0.08));
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   --tw-duration: 500ms;
   transition-duration: 500ms;
-  &::before {
-    content: var(--tw-content);
-    pointer-events: none;
-  }
   &::before {
     content: var(--tw-content);
     position: absolute;
@@ -2079,7 +2075,7 @@
   }
   &::before {
     content: var(--tw-content);
-    --tw-blur: blur(5px);
+    --tw-blur: blur(25px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   &:hover {
