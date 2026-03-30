@@ -2019,6 +2019,23 @@
     opacity: 100%;
   }
 }
+.botao_terminar_sessao_dashboard {
+  cursor: pointer;
+  border-radius: calc(infinity * 1px);
+  background-color: var(--color-red-500);
+  padding-inline: calc(var(--spacing) * 4);
+  padding-block: calc(var(--spacing) * 1);
+  font-family: var(--font-pop);
+  font-size: var(--text-sm);
+  line-height: var(--tw-leading, var(--text-sm--line-height));
+  color: #E2E8F0;
+  --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.botao_terminar_sessao_dashboard:hover > .fa-arrow-right-to-bracket {
+  position: relative;
+  left: calc(var(--spacing) * 1);
+}
 .card_info_painel {
   position: relative;
   display: flex;
@@ -2147,6 +2164,11 @@
   font-weight: var(--font-weight-semibold);
   color: #E2E8F0;
   opacity: 70%;
+  &:hover {
+    @media (hover: hover) {
+      opacity: 100%;
+    }
+  }
 }
 .icone_botao_lado_dash {
   font-size: 18px;
