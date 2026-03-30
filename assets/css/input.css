@@ -220,7 +220,7 @@
 }
 
 .card_info_painel {
-    @apply border border-[#191B20] h-max w-70 rounded-xl py-3 px-5 gap-4 flex flex-col items-center relative transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px] hover:-translate-y-1
+    @apply border border-[#191B20] h-max w-70 rounded-xl py-3 px-5 gap-4 flex flex-col items-center relative transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[15px] hover:-translate-y-1 before:pointer-events-none
 }
 
 .div_topo_card_info_painel {
