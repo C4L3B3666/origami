@@ -288,9 +288,6 @@
   .h-65 {
     height: calc(var(--spacing) * 65);
   }
-  .h-105 {
-    height: calc(var(--spacing) * 105);
-  }
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
@@ -483,9 +480,6 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .rounded-lg {
-    border-radius: var(--radius-lg);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
@@ -1159,11 +1153,6 @@
       width: calc(var(--spacing) * 14);
     }
   }
-  .md\:w-102 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 102);
-    }
-  }
   .md\:w-125 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 125);
@@ -1177,11 +1166,6 @@
   .md\:w-160 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 160);
-    }
-  }
-  .md\:w-190 {
-    @media (width >= 48rem) {
-      width: calc(var(--spacing) * 190);
     }
   }
   .md\:w-212\.5 {
@@ -2127,6 +2111,70 @@
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: #E2E8F0;
+}
+.div_grafico_dash {
+  position: relative;
+  display: flex;
+  height: calc(var(--spacing) * 105);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #191B20;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 500ms;
+  transition-duration: 500ms;
+  &::before {
+    content: var(--tw-content);
+    pointer-events: none;
+  }
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    inset: calc(var(--spacing) * 0);
+  }
+  &::before {
+    content: var(--tw-content);
+    background-image: radial-gradient(circle at top,rgba(92,200,255,0.15),transparent 70%);
+  }
+  &::before {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+  &::before {
+    content: var(--tw-content);
+    --tw-blur: blur(15px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
+  @media (width >= 48rem) {
+    width: calc(var(--spacing) * 190);
+  }
+}
+.div_grafico_dash > h5 {
+  font-family: var(--font-pop);
+  font-size: var(--text-3xl);
+  line-height: var(--tw-leading, var(--text-3xl--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  opacity: 85%;
+}
+.div_estatistica_lucro_origami {
+  height: calc(var(--spacing) * 105);
+  border-radius: var(--radius-lg);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: #191B20;
+  padding: calc(var(--spacing) * 6);
+  @media (width >= 48rem) {
+    width: calc(var(--spacing) * 102);
+  }
 }
 .nav_area_lucro {
   display: flex;
