@@ -257,23 +257,23 @@
 }
 
 .div_estatistica_lucro_origami {
-    @apply border border-[#191B20] h-105 md:w-102 rounded-lg p-6
+    @apply border border-[#191B20] h-105 md:w-102 rounded-lg overflow-hidden flex flex-col justify-between
 }
 
 .nav_area_lucro {
-    @apply flex gap-3.5 
+    @apply flex p-2 flex-col items-center justify-center text-center
 }
 
 .posicao_area_lucro {
-    @apply font-pop font-bold 
+    @apply font-geist font-bold text-2xl
 }
 
 .area_investimento_lucro {
-    @apply font-semibold opacity-90 font-pop
+    @apply font-semibold font-pop uppercase opacity-95
 }
 
 .lucro_area_investimento {
-    @apply text-green-400 opacity-70 font-geist text-sm font-semibold
+    @apply font-geist text-[12px] font-semibold opacity-75
 }
 
 .botao_lado_dash {
