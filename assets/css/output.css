@@ -10,6 +10,8 @@
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-green-600: oklch(62.7% 0.194 149.214);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -720,9 +722,6 @@
   }
   .text-\[41px\] {
     font-size: 41px;
-  }
-  .text-\[80px\] {
-    font-size: 80px;
   }
   .leading-tight {
     --tw-leading: var(--leading-tight);
@@ -2022,10 +2021,12 @@
   }
 }
 .card_info_painel {
+  position: relative;
   display: flex;
-  height: calc(var(--spacing) * 35);
+  height: max-content;
   width: calc(var(--spacing) * 70);
   flex-direction: column;
+  align-items: center;
   gap: calc(var(--spacing) * 4);
   border-radius: var(--radius-lg);
   border-style: var(--tw-border-style);
@@ -2033,6 +2034,33 @@
   border-color: #191B20;
   padding-inline: calc(var(--spacing) * 5);
   padding-block: calc(var(--spacing) * 3);
+  --tw-shadow: 0 0 0 1px var(--tw-shadow-color, rgba(92,200,255,0.15)), 0 0 5px var(--tw-shadow-color, rgba(92,200,255,0.08));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  &::before {
+    content: var(--tw-content);
+    pointer-events: none;
+  }
+  &::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  &::before {
+    content: var(--tw-content);
+    inset: calc(var(--spacing) * 0);
+  }
+  &::before {
+    content: var(--tw-content);
+    background-image: radial-gradient(circle at top,rgba(92,200,255,0.15),transparent 70%);
+  }
+  &::before {
+    content: var(--tw-content);
+    opacity: 100%;
+  }
+  &::before {
+    content: var(--tw-content);
+    --tw-blur: blur(25px);
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
 }
 .div_topo_card_info_painel {
   display: flex;
@@ -2046,7 +2074,8 @@
   opacity: 75%;
 }
 .icone_card_painel {
-  color: #E2E8F0;
+  font-size: 20px;
+  color: #5CC8FF;
   opacity: 75%;
 }
 .valor_card_info_painel {
@@ -2063,12 +2092,14 @@
   align-items: center;
   justify-content: center;
   gap: calc(var(--spacing) * 0.5);
-  color: var(--color-green-400);
+  color: var(--color-green-500);
 }
 .valor_ganho_diario {
   font-family: var(--font-geist);
+  font-size: 13px;
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
+  color: #E2E8F0;
 }
 .nav_area_lucro {
   display: flex;
@@ -2111,6 +2142,7 @@
   font-size: 18px;
 }
 .botao_lado_dash.ativo {
+  color: #5CC8FF;
   opacity: 100%;
 }
 .secao_lado_dashboard {
