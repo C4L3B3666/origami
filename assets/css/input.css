@@ -350,17 +350,29 @@ header.active .linha_menu_hamburguer {
 }
 
 .texto_data_vigencia_termo_politica {
-    @apply text-[#E2E8F0] font-pop opacity-65 text-center flex flex-col
+    @apply text-[#E2E8F0] font-pop opacity-65 text-center flex flex-col 
 }
 
 .texto_data_vigencia_termo_politica > .palavra_destaque {
-    @apply text-[11px]
+    @apply text-[11px] bg-gray-800 rounded-full
 }
 
 .main_termo_politica {
-    @apply mx-29 min-h-full
+    @apply mx-27 min-h-full
 }
 
 .texto_termo_politica {
-    @apply text-[#E2E8F0] font-pop text-sm
+    @apply text-[#E2E8F0] font-pop text-sm p-5
+}
+
+.titulo_item_termo_politica {
+    @apply text-[#E2E8F0] font-geist font-black uppercase text-[35px] opacity-85 leading-tight p-2 mx-3.5 mt-5 
+}
+
+.texto_item_termo_politica {
+    @apply px-5 pb-5 text-[#E2E8F0] font-pop text-sm
+}
+
+.div_item_texto_termo_politica {
+    @apply border-t border-t-[#504D4D63]
 }
