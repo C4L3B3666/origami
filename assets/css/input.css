@@ -358,7 +358,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .main_termo_politica {
-    @apply mx-[116px] min-h-full
+    @apply mx-29 min-h-full
 }
 
 .texto_termo_politica {
