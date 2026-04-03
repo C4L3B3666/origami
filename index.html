@@ -26,11 +26,12 @@
             <header class="flex justify-between items-center fixed md:mt-10 min-w-screen md:min-w-[90%] px-4 md:px-10 md:h-14 h-15 md:rounded-full backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,.7)] z-10 border-0 md:border border-[#504D4D63]">
                 <a href="./" class="z-20 md:hover:rotate-6 transition-transform duration-300"><img src="assets/img/logo_icone.png" alt="" srcset="" class="w-12 md:w-13"></a>
                 <ul class="absolute md:static flex flex-col md:flex-row backdrop-blur-lg bg-[#05060A] md:bg-transparent left-0 w-screen md:w-auto h-screen pt-18 pb-6 md:h-auto items-center md:pt-0 md:pb-0 justify-between top-0 gap-6 translate-x-full md:translate-x-0 transition-transform ease-in duration-300 md:bg-none bg-[linear-gradient(180deg,#030304_0%,#5cc9ff10_100%)] pointer-events-none md:pointer-events-auto">
-                    <li class="opcao_link_menu"><a href="#">Página Inicial</a></li>
-                    <li class="opcao_link_menu"><a href="#">Planos e Retornos</a></li>
-                    <li class="opcao_link_menu"><a href="#">Como Funciona?</a></li>
-                    <li class="opcao_link_menu"><a href="#">Quem Somos?</a></li>
-                    <li class="opcao_link_menu"><a href="#">Perguntas Frequentes</a></li>
+                    <li class="opcao_link_menu"><a href="#" target="_top">Página Inicial</a></li>
+                    <li class="opcao_link_menu"><a href="#nossosNumeros">Nossos Números</a></li>
+                    <li class="opcao_link_menu"><a href="#parceiros">Parceiros</a></li>
+                    <li class="opcao_link_menu"><a href="#perguntasFrequentes">Perguntas Frequentes</a></li>
+                    <li class="opcao_link_menu"><a href="#comoFunciona">Como Funciona?</a></li>
+                    <li class="opcao_link_menu"><a href="#quemSomos">Quem Somos?</a></li>
                 </ul>
                 <div class="flex items-center">
                     <nav class="nav_btns">
@@ -59,7 +60,7 @@
         <div class="absolute bottom-0 left-0 w-full h-40 bg-linear-to-b from-transparent to-[#030304] pointer-events-none"></div>
     </section>
     
-    <section class="text-white py-32 relative overflow-hidden px-12 md:px-0 flex flex-col md:flex-row items-start justify-center">
+    <section class="text-white py-32 relative overflow-hidden px-12 md:px-0 flex flex-col md:flex-row items-start justify-center" id="nossosNumeros">
         <div class="absolute inset-0 flex justify-center pointer-events-none">
             <div class="w-150 h-150 bg-[radial-gradient(circle,rgba(92,200,255,0.12),transparent_70%)] blur-[90px]"></div>
         </div>
@@ -100,7 +101,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-start justify-start md:items-center pb-30 relative overflow-hidden">
+    <section class="flex flex-col items-start justify-start md:items-center pb-30 relative overflow-hidden py-32" id="parceiros">
         <div class="absolute inset-0 hidden md:flex justify-center pointer-events-none">
             <div class="w-150 h-150 bg-[radial-gradient(circle,rgba(92,200,255,0.12),transparent_70%)] blur-[90px]"></div>
         </div>
@@ -186,7 +187,7 @@
         </div>
     </section>
 
-    <section class="py-40 px-6 text-white relative overflow-hidden flex flex-col items-center gap-20">
+    <section class="pt-40 px-6 text-white relative overflow-hidden flex flex-col items-center gap-20" id="perguntasFrequentes">
 
         <div class="absolute inset-0 flex justify-center pointer-events-none z-0">
             <div class="w-225 h-225 bg-[radial-gradient(circle,rgba(92,200,255,0.12),transparent_70%)] blur-[140px]"></div>
@@ -292,7 +293,7 @@
 
     </section>
         
-    <section class="px-8 text-white relative overflow-hidden flex flex-col md:items-center gap-20 pb-35">
+    <section class="px-8 text-white relative overflow-hidden flex flex-col md:items-center gap-20 py-30" id="comoFunciona">
 
         <div class="absolute inset-0 flex justify-center pointer-events-none"><div class="w-225 translate-x-60 h-225 bg-[radial-gradient(circle,rgba(92,200,255,0.10),transparent_70%)] blur-[140px]"></div></div>
 
@@ -349,7 +350,7 @@
         <h2 class="subtitulo max-w-3xl text-center">A Origami. foi criada para evoluir com você.</h2>
     </section>
 
-    <section class="px-8 pb-30 pt-35 flex flex-col items-center"> 
+    <section class="px-8 py-40 pt-35 flex flex-col items-center" id="quemSomos"> 
         <div class="text-center flex flex-col items-center justify-center max-w-3xl">
             <h2 class="subtitulo">Saiba Quem Somos.</h2>
             <p class="texto_subtitulo">Somos uma geração de tecnologia financeira 100% angolana. A <strong class="palavra_destaque">DominusCorpus</strong> desenvolveu a <strong class="palavra_destaque">OrigamiAI.</strong> para gerar lucros de maneira inteligente e elevar o potencial financeiro de quem confia na nossa tecnologia.</p> 
@@ -415,5 +416,6 @@
             </nav>
         </div>
     </footer>
+    
 </body>
 </html> 

@@ -7,6 +7,10 @@
     --font-pop: "Poppins", system-ui, sans-serif;
 }
 
+.secao {
+    @apply py-40 px-6 text-white relative overflow-hidden flex flex-col items-center gap-20
+}
+
 .palavra_destaque {
     @apply font-semibold
 }
@@ -16,7 +20,7 @@ header.active > ul {
 }
 
 .opcao_link_menu {
-    @apply text-sm font-pop opacity-0 md:opacity-85 text-[#E2E8F0] md:hover:opacity-100 transition-all md:transition-opacity md:duration-200 duration-500 md:translate-x-0 translate-x-100 nth-[1]:delay-300 nth-[2]:delay-350 nth-[3]:delay-400 nth-[4]:delay-450 nth-[5]:delay-500
+    @apply text-sm font-pop opacity-0 md:opacity-85 text-[#E2E8F0] md:hover:opacity-100 transition-all md:transition-opacity md:duration-200 duration-500 md:translate-x-0 translate-x-100 nth-[1]:delay-300 nth-[2]:delay-350 nth-[3]:delay-400 nth-[4]:delay-450 nth-[5]:delay-500 nth-[6]:delay-550
 }
 
 header.active .opcao_link_menu {
