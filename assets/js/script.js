@@ -92,26 +92,42 @@ function neuralAnim(){
 
 neuralAnim()
 
-document.querySelector("#menuHamburguer").addEventListener("click",()=> {
-    document.querySelector("#menu").classList.toggle("active")
-})
+// EFEITO MENU OCULTO
+const menu = document.querySelector("header")
+const menuHamburguer = document.querySelector("#menuHamburguer")
+const corpo = document.querySelector("body")
+if (menu && menuHamburguer) {
+    menuHamburguer.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        corpo.style.overflowY = menu.classList.contains("active") ? "hidden" : "scroll";
+    });
 
-const faq = document.querySelectorAll(".faq_item");
-
-faq.forEach(item => {
-
-const btn = item.querySelector(".faq_pergunta");
-
-btn.addEventListener("click", () => {
-
-faq.forEach(el=>{
-if(el!==item){
-el.classList.remove("active");
+    document.querySelectorAll(".opcao_link_menu").forEach((link) => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+            corpo.style.overflowY = "scroll";
+        });
+    });
 }
-});
+// EFEITO MENU OCULTO
 
-item.classList.toggle("active");
-
+// ACORDEÃO DE PERGUNTAS 
+const faq = document.querySelectorAll(".faq_item");
+faq.forEach(item => {
+    const btn = item.querySelector(".faq_pergunta");
+    btn.addEventListener("click", () => {
+        faq.forEach(el=>{
+            if(el!==item){
+                el.classList.remove("active");
+            }
+        });
+        item.classList.toggle("active");
+    });
 });
+// ACORDEÃO DE PERGUNTAS 
 
-});
+// ANO ATUAL EM RODAPÉS 
+document.querySelectorAll(".anoAtualRodape").forEach((anoAtualRodape) => {
+    anoAtualRodape.textContent = new Date().getFullYear();
+})
+// ANO ATUAL EM RODAPÉS 

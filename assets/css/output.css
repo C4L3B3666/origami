@@ -319,8 +319,8 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .w-13 {
-    width: calc(var(--spacing) * 13);
+  .w-12 {
+    width: calc(var(--spacing) * 12);
   }
   .w-20 {
     width: calc(var(--spacing) * 20);
@@ -479,6 +479,9 @@
   .overflow-y-hidden {
     overflow-y: hidden;
   }
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -552,6 +555,9 @@
   }
   .bg-\[\#191b2062\] {
     background-color: #191b2062;
+  }
+  .bg-\[\#05060A\] {
+    background-color: #05060A;
   }
   .bg-\[\#030304\] {
     background-color: #030304;
@@ -894,10 +900,6 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
-  .duration-700 {
-    --tw-duration: 700ms;
-    transition-duration: 700ms;
-  }
   .ease-in {
     --tw-ease: var(--ease-in);
     transition-timing-function: var(--ease-in);
@@ -1069,6 +1071,13 @@
       content: var(--tw-content);
     }
   }
+  .hover\:rotate-6 {
+    &:hover {
+      @media (hover: hover) {
+        rotate: 6deg;
+      }
+    }
+  }
   .hover\:animate-none {
     &:hover {
       @media (hover: hover) {
@@ -1172,9 +1181,9 @@
       height: auto;
     }
   }
-  .md\:w-14 {
+  .md\:w-13 {
     @media (width >= 48rem) {
-      width: calc(var(--spacing) * 14);
+      width: calc(var(--spacing) * 13);
     }
   }
   .md\:w-125 {
@@ -1413,7 +1422,7 @@
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
 }
-#menu.active {
+header.active > ul {
   --tw-translate-x: calc(var(--spacing) * 0);
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
@@ -1425,11 +1434,13 @@
   transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
-  --tw-duration: 300ms;
-  transition-duration: 300ms;
+  --tw-duration: 250ms;
+  transition-duration: 250ms;
+  --tw-ease: var(--ease-in);
+  transition-timing-function: var(--ease-in);
   &:hover {
     @media (hover: hover) {
-      color: var(--color-white);
+      opacity: 85%;
     }
   }
 }
@@ -1500,7 +1511,20 @@
   width: calc(var(--spacing) * 7);
   border-radius: calc(infinity * 1px);
   background-color: #E2E8F0;
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 400ms;
+  transition-duration: 400ms;
   &:nth-child(1) {
+    width: calc(var(--spacing) * 5);
+  }
+}
+header.active .linha_menu_hamburguer {
+  &:nth-child(1) {
+    width: calc(var(--spacing) * 7);
+  }
+  &:nth-child(2) {
     width: calc(var(--spacing) * 5);
   }
 }
@@ -1971,10 +1995,13 @@
   }
 }
 .card_parceiro_grande {
+  z-index: 1;
   display: none;
   width: calc(var(--spacing) * 122);
   align-items: center;
   justify-content: center;
+  border-style: var(--tw-border-style);
+  border-width: 0px;
   @media (width >= 48rem) {
     display: flex;
   }
@@ -2030,16 +2057,44 @@
 .botao_terminar_sessao_dashboard {
   cursor: pointer;
   border-radius: calc(infinity * 1px);
-  background-color: var(--color-red-500);
+  border-style: var(--tw-border-style);
+  border-width: 1px;
+  border-color: var(--color-red-500);
+  background-color: transparent;
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 1);
   font-family: var(--font-pop);
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
-  color: #E2E8F0;
-  opacity: 90%;
-  --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-red-500);
+  transition-property: all;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+  --tw-duration: 300ms;
+  transition-duration: 300ms;
+  &:hover {
+    @media (hover: hover) {
+      background-color: var(--color-red-500);
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      color: #E2E8F0;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      opacity: 85%;
+    }
+  }
+  &:hover {
+    @media (hover: hover) {
+      --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
 }
 .botao_terminar_sessao_dashboard:hover > .fa-arrow-right-to-bracket {
   position: relative;

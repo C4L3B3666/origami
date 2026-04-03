@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-AO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="DominusCorpus">
@@ -24,8 +24,8 @@
 
         <nav class="flex justify-center">
             <header class="flex justify-between items-center fixed md:mt-10 min-w-screen md:min-w-[90%] px-4 md:px-10 md:h-14 h-15 md:rounded-full backdrop-blur-sm shadow-[0_0_15px_rgba(0,0,0,.7)] z-10 border-0 md:border border-[#504D4D63]">
-                <a href="./" class="z-20"><img src="assets/img/logo_icone.png" alt="" srcset="" class="w-13 md:w-14"></a>
-                <ul class="absolute md:static flex flex-col md:flex-row backdrop-blur-lg bg-[#030304] md:bg-transparent left-0 w-screen md:w-auto h-screen pt-18 pb-6 md:h-auto items-center md:pt-0 md:pb-0 justify-between top-0 gap-6 translate-x-full md:translate-x-0 transition-transform ease duration-700" id="menu">
+                <a href="./" class="z-20 hover:rotate-6 transition-transform duration-300"><img src="assets/img/logo_icone.png" alt="" srcset="" class="w-12 md:w-13"></a>
+                <ul class="absolute md:static flex flex-col md:flex-row backdrop-blur-lg bg-[#05060A] md:bg-transparent left-0 w-screen md:w-auto h-screen pt-18 pb-6 md:h-auto items-center md:pt-0 md:pb-0 justify-between top-0 gap-6 translate-x-full md:translate-x-0 transition-transform ease-in duration-300">
                     <li class="opcao_link_menu"><a href="#">Página Inicial</a></li>
                     <li class="opcao_link_menu"><a href="#">Planos e Retornos</a></li>
                     <li class="opcao_link_menu"><a href="#">Como Funciona?</a></li>
@@ -47,7 +47,7 @@
 
         <nav class="h-screen flex items-center justify-center text-center px-18">
             <nav class="flex items-center flex-col">
-                <h1 class="font-geist font-black uppercase text-[41px] md:text-6xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">sua riqueza multiplicada por inteligência artificial</h1>
+                <h1 class="font-geist font-black uppercase text-[41px] md:text-6xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">sua riqueza multiplicada por inteligência artificial.</h1>
                 <p class="font-pop font-light text-[#E2E8F0]">Com lucros de até 0.5% ao ano! Saiba como a <strong class="palavra_destaque">Origami</strong> multiplica o seu dinheiro de forma inteligente.</p>
                 <div class="nav_btns mt-4">
                     <button class="btn">Desperte Sua Riqueza <i class="fa-solid fa-bolt"></i></button>
@@ -101,10 +101,15 @@
     </section>
 
     <section class="flex flex-col items-start justify-start md:items-center pb-30 relative overflow-hidden">
+        <div class="absolute inset-0 hidden md:flex justify-center pointer-events-none">
+            <div class="w-150 h-150 bg-[radial-gradient(circle,rgba(92,200,255,0.12),transparent_70%)] blur-[90px]"></div>
+        </div>
+
         <div class="px-8 text-center flex flex-col items-center justify-center max-w-3xl md:hidden">
             <h2 class="subtitulo">Empresas que acreditam na Origami.</h2>
             <p class="texto_subtitulo">Nossos parceiros exclusivos respeitados nacional e internacionalmente, especialistas em commodities algorítmicas, investimentos precisos, soluções de pagamento e inteligência artificial.</p>
         </div>
+
         <div class="before:absolute before:content-[''] before:bg-[linear-gradient(to_right,#030304_8%,transparent_100%)] before:z-1 before:w-35 before:h-80 before:bottom-0 before:left-0 before:pointer-events-none after:absolute after:bg-[linear-gradient(to_left,#030304_8%,transparent_100%)] after:w-35 after:content-[''] after:h-80 after:bottom-0 after:-right-2 after:pointer-events-none after:z-1 md:before:hidden md:after:hidden">
             <div class="my-4 flex gap-3 md:flex-wrap md:w-250 px-8 md:px-0 animate-[animacaoScroll_30s_linear_infinite] md:animate-none">
                 <div class="card_parceiro card_parceiro_pequeno">
@@ -344,7 +349,7 @@
         <h2 class="subtitulo max-w-3xl text-center">A Origami. foi criada para evoluir com você.</h2>
     </section>
 
-    <section class="px-8 pb-30 pt-35 flex flex-col items-center">
+    <section class="px-8 pb-30 pt-35 flex flex-col items-center"> 
         <div class="text-center flex flex-col items-center justify-center max-w-3xl">
             <h2 class="subtitulo">Saiba Quem Somos.</h2>
             <p class="texto_subtitulo">Somos uma geração de tecnologia financeira 100% angolana. A <strong class="palavra_destaque">DominusCorpus</strong> desenvolveu a <strong class="palavra_destaque">OrigamiAI.</strong> para gerar lucros de maneira inteligente e elevar o potencial financeiro de quem confia na nossa tecnologia.</p> 
@@ -393,7 +398,7 @@
                 <a href="#"><i class="fa-brands fa-youtube link_social_media"></i></a>
             </nav>
             <nav>
-                <p class="text-[#E2E8F0] font-geist text-[13px]">&copy;2026 — <a href="#" class="hover:underline"><strong class="palavra_destaque">DominusCorpus</strong></a> — Todos os direitos reservados</p>
+                <p class="text-[#E2E8F0] font-geist text-[13px]">&copy;<span class="anoAtualRodape"></span> — <a href="#" class="hover:underline"><strong class="palavra_destaque">DominusCorpus</strong></a> — Todos os direitos reservados</p>
             </nav>
         </div>
     </footer>
