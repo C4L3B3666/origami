@@ -195,7 +195,7 @@
 
         <div class="text-center max-w-3xl">
             <h2 class="subtitulo">Perguntas frequentes.</h2>
-            <p class="texto_subtitulo">O que precisa saber antes de <span class="palavra_destaque">começar</span> a investir com <span class="palavra_destaque">a Origami.</span> Valorizamos a clareza, transparência e a segurança financeira. Você tem outra pergunta? Clique <button class="palavra_destaque underline cursor-pointer">aqui</button> e fale connosco.</p>
+            <p class="texto_subtitulo">O que precisa saber antes de <span class="palavra_destaque">começar</span> a investir com <span class="palavra_destaque">a Origami.</span> Valorizamos a clareza, transparência e a segurança financeira. Você tem outra pergunta? Clique <a href="#perguntasFrequentes" class="palavra_destaque underline cursor-pointer active:text-white" id="botaoTenhoDuvidas">aqui</a> e fale connosco.</p>
         </div>
 
         <div class="w-full max-w-4xl flex flex-col gap-5">
@@ -272,12 +272,12 @@
             </div>
         </div>
 
-        <div class="absolute bg-[#0303047a] backdrop-blur-lg pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center">
+        <div id="divContentFormDuvidas">
 
             <form class="backdrop-blur-md rounded-xl border border-[#191b20] p-8 flex flex-col gap-4 transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px] md:h-150 h-max md:w-150 w-[90%] bg-[#0303043f] before:pointer-events-none">
                 <div class="flex justify-between items-center">
                     <img src="assets/img/logo_full.png" alt="imagem da logo do origami" class="w-40">
-                    <button class="rounded-full border border-red-500 shadow-[0_0_10px_#fb2c36] px-1.5 font-pop text-sm bg-red-500 py-1 cursor-pointer opacity-80 hover:opacity-90"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="rounded-full border border-red-500 shadow-[0_0_10px_#fb2c36] px-1.5 font-pop text-sm bg-red-500 py-1 cursor-pointer opacity-80 hover:opacity-90 active:scale-110 hover:scale-110" id="botaoFecharFormDuvidas"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <p class="texto_subtitulo text-center md:pt-4">Não encontrou a resposta que procurava? Envie a sua questão e a nossa equipa responderá o mais breve possível.</p>
                 

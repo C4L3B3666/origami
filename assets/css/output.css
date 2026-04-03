@@ -38,7 +38,6 @@
     --radius-2xl: 1rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --animate-spin: spin 1s linear infinite;
-    --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-bounce: bounce 1s infinite;
     --blur-xs: 4px;
     --blur-sm: 8px;
@@ -235,9 +234,6 @@
   .z-20 {
     z-index: 20;
   }
-  .z-50 {
-    z-index: 50;
-  }
   .my-4 {
     margin-block: calc(var(--spacing) * 4);
   }
@@ -426,17 +422,11 @@
   .animate-\[gridMove_20s_linear_infinite\] {
     animation: gridMove 20s linear infinite;
   }
-  .animate-\[levitaLuzImgCiborgue_3s_ease-in_infinite_0\.2s\] {
-    animation: levitaLuzImgCiborgue 3s ease-in infinite 0.2s;
-  }
   .animate-\[luzFundo_8s_ease_infinite_alternate\] {
     animation: luzFundo 8s ease infinite alternate;
   }
   .animate-bounce {
     animation: var(--animate-bounce);
-  }
-  .animate-ping {
-    animation: var(--animate-ping);
   }
   .animate-spin {
     animation: var(--animate-spin);
@@ -615,9 +605,6 @@
   }
   .bg-\[\#0303043f\] {
     background-color: #0303043f;
-  }
-  .bg-\[\#0303047a\] {
-    background-color: #0303047a;
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1128,6 +1115,16 @@
       content: var(--tw-content);
     }
   }
+  .hover\:scale-110 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-scale-x: 110%;
+        --tw-scale-y: 110%;
+        --tw-scale-z: 110%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
   .hover\:animate-none {
     &:hover {
       @media (hover: hover) {
@@ -1159,6 +1156,37 @@
   .focus\:border-\[\#154466\] {
     &:focus {
       border-color: #154466;
+    }
+  }
+  .active\:scale-105 {
+    &:active {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .active\:scale-110 {
+    &:active {
+      --tw-scale-x: 110%;
+      --tw-scale-y: 110%;
+      --tw-scale-z: 110%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+  }
+  .active\:text-\[\#154466\] {
+    &:active {
+      color: #154466;
+    }
+  }
+  .active\:text-\[\#\] {
+    &:active {
+      color: #;
+    }
+  }
+  .active\:text-white {
+    &:active {
+      color: var(--color-white);
     }
   }
   .md\:pointer-events-auto {
@@ -1751,6 +1779,25 @@ header.active .linha_menu_hamburguer {
   font-size: 13px;
   color: #E2E8F0;
   opacity: 80%;
+}
+#divContentFormDuvidas {
+  pointer-events: none;
+  position: absolute;
+  top: calc(var(--spacing) * 0);
+  z-index: 50;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: #0303047a;
+  --tw-backdrop-blur: blur(var(--blur-lg));
+  -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+}
+#divContentFormDuvidas.active {
+  pointer-events: auto;
+  display: flex;
 }
 .faq_item {
   position: relative;
@@ -2952,12 +2999,6 @@ header.active .linha_menu_hamburguer {
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
 @keyframes bounce {

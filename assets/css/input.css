@@ -97,6 +97,14 @@ header.active .linha_menu_hamburguer {
     @apply text-[13px] text-[#E2E8F0] opacity-80 font-pop
 }
 
+#divContentFormDuvidas {
+    @apply absolute bg-[#0303047a] backdrop-blur-lg pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center
+}
+
+#divContentFormDuvidas.active {
+    @apply pointer-events-auto flex
+}
+
 .faq_item {
     @apply border-l border-l-[#191B20] backdrop-blur-sm  overflow-hidden transition-all duration-500 relative before:content-[''] before:absolute before:inset-0 before:bg-[linear-gradient(90deg,transparent,rgba(92,200,255,0.08),transparent)] before:opacity-0 before:transition-opacity before:duration-400 before:pointer-events-none after:content-[''] after:absolute after:top-0 after:-left-full after:w-full after:h-px after:bg-[linear-gradient(90deg,transparent,#5CC8FF,transparent)] after:transition-all after:duration-800
 }

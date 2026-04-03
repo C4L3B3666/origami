@@ -124,7 +124,25 @@ faq.forEach(item => {
         item.classList.toggle("active");
     });
 });
+
 // ACORDEÃO DE PERGUNTAS 
+
+// FORMULÁRIO ENVIAR QUESTÃO
+const botaoDuvidas = document.getElementById("botaoTenhoDuvidas");
+if (botaoDuvidas) {
+    let divContent = document.getElementById("divContentFormDuvidas")
+    botaoDuvidas.addEventListener("click", ()=> {
+        divContent.classList.add("active")
+        corpo.style.overflowY = "hidden"
+    })
+    
+    botaoFecharFormDuvidas = document.getElementById("botaoFecharFormDuvidas")
+    botaoFecharFormDuvidas.addEventListener("click", ()=> {
+        divContent.classList.remove("active")
+        corpo.style.overflowY = "scroll"
+    })
+}
+// FORMULÁRIO ENVIAR QUESTÃO
 
 // ANO ATUAL EM RODAPÉS 
 document.querySelectorAll(".anoAtualRodape").forEach((anoAtualRodape) => {
