@@ -12,11 +12,15 @@
 }
 
 header.active > ul {
-    @apply translate-x-0;
+    @apply translate-x-0 pointer-events-auto;
 }
 
 .opcao_link_menu {
-    @apply text-sm font-pop text-[#E2E8F0] hover:opacity-85 transition-colors ease-in duration-250
+    @apply text-sm font-pop opacity-0 md:opacity-85 text-[#E2E8F0] md:hover:opacity-100 transition-all md:transition-opacity md:duration-200 duration-500 md:translate-x-0 translate-x-100 nth-[1]:delay-300 nth-[2]:delay-350 nth-[3]:delay-400 nth-[4]:delay-450 nth-[5]:delay-500
+}
+
+header.active .opcao_link_menu {
+    @apply translate-x-0 opacity-100
 }
 
 .nav_btns {
@@ -166,7 +170,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_equipe {
-    @apply h-120 md:h-140 w-[90%] md:w-92 sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] bg-[#030304] nth-[2]:md:translate-x-96 nth-[3]:md:-translate-x-96
+    @apply h-120 md:h-140 w-[90%] md:w-92 sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] bg-[#030304] nth-[2]:md:translate-x-96 nth-[3]:md:-translate-x-96 nth-[4]:md:-translate-x-96 nth-[5]:md:translate-x-96
 }
 
 .texto_card_equipe {
