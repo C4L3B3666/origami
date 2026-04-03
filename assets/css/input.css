@@ -335,3 +335,32 @@ header.active .linha_menu_hamburguer {
 .btn_config {
     @apply bg-[#154466] shadow-[0_0_15px_#154466] border-[#154466] rounded-lg font-pop px-1 cursor-pointer mt-2
 }
+
+/* Termos e Política de Privacidade */
+.link_img_logo_termo_politica {
+    @apply py-0.5 ml-10 flex items-center justify-center
+}
+
+.titulo_termo_politica {
+    @apply text-[#E2E8F0] font-geist font-black uppercase text-[40px] opacity-85 leading-tight border-l border-r border-[#504D4D63] px-105 py-0.5 
+}
+
+.div_data_vigencia_termo_politica {
+    @apply flex items-center pr-5 justify-center text-center
+}
+
+.texto_data_vigencia_termo_politica {
+    @apply text-[#E2E8F0] font-pop opacity-65 text-center flex flex-col
+}
+
+.texto_data_vigencia_termo_politica > .palavra_destaque {
+    @apply text-[11px]
+}
+
+.main_termo_politica {
+    @apply mx-[116px] min-h-full
+}
+
+.texto_termo_politica {
+    @apply text-[#E2E8F0] font-pop text-sm
+}
