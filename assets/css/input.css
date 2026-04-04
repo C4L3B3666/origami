@@ -20,7 +20,7 @@ header.active > ul {
 }
 
 .opcao_link_menu {
-    @apply text-sm font-pop opacity-0 md:opacity-85 text-[#E2E8F0] md:hover:opacity-100 transition-all md:transition-opacity md:duration-150 duration-500 md:translate-x-0 translate-x-100 nth-[1]:delay-300 nth-[2]:delay-350 nth-[3]:delay-400 nth-[4]:delay-450 nth-[5]:delay-500 nth-[6]:delay-550
+    @apply text-sm font-pop opacity-0 xl:opacity-85 text-[#E2E8F0] xl:hover:opacity-100 transition-all xl:transition-opacity xl:duration-150 duration-500 xl:translate-x-0 translate-x-100 nth-[1]:delay-300 nth-[2]:delay-350 nth-[3]:delay-400 nth-[4]:delay-450 nth-[5]:delay-500 nth-[6]:delay-550
 }
 
 header.active .opcao_link_menu {
