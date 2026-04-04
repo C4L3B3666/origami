@@ -70,7 +70,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .subtitulo {
-    @apply font-geist font-black uppercase text-[41px] md:text-6xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent
+    @apply font-geist font-black uppercase text-[35px] sm:text-[41px] lg:text-5xl xl:text-6xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent
 }
 
 .texto_subtitulo {
@@ -98,7 +98,7 @@ header.active .linha_menu_hamburguer {
 }
 
 #divContentFormDuvidas {
-    @apply absolute bg-[#0303047a] backdrop-blur-lg pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center
+    @apply absolute bg-[#030304]/40 backdrop-blur-md pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center
 }
 
 #divContentFormDuvidas.active {
@@ -146,7 +146,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_passos{
-    @apply border rounded-xl backdrop-blur-sm p-8 flex flex-col items-center text-center gap-4 w-70 relative transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] md:hover:-translate-y-1 before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px]
+    @apply border rounded-xl backdrop-blur-sm p-8 flex flex-col items-center text-center gap-4 w-70 relative transition-all duration-500 shadow-[0_0_0_1px_rgba(92,200,255,0.15),0_0_5px_rgba(92,200,255,0.08)] border-[#5cc9ff2d] lg:hover:-translate-y-1 before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px]
 }
 
 .numero_passo{
@@ -166,7 +166,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .linha_fluxo{
-    @apply w-17.5 h-0.5 bg-[linear-gradient(90deg,transparent,#5CC8FF,transparent)] opacity-40 absolute
+    @apply w-17.5 h-0.5 bg-[linear-gradient(90deg,transparent,#5CC8FF,transparent)] opacity-40 absolute hidden lg:block
 }
 
 .linha_fluxo_1 {
@@ -182,7 +182,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_equipe {
-    @apply h-120 md:h-140 w-[90%] md:w-92 sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] bg-[#030304] nth-[2]:md:translate-x-96 nth-[3]:md:-translate-x-96 nth-[4]:md:-translate-x-96 nth-[5]:md:translate-x-96
+    @apply h-120 md:h-140 min-w-85 sm:max-w-85 lg:w-92 sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] bg-[#030304] nth-[2]:lg:translate-x-50 nth-[3]:lg:-translate-x-50 nth-[4]:lg:-translate-x-50 nth-[5]:lg:translate-x-50 nth-[2]:xl:translate-x-96 nth-[3]:xl:-translate-x-96 nth-[4]:xl:-translate-x-96 nth-[5]:xl:translate-x-96
 }
 
 .texto_card_equipe {
@@ -194,7 +194,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_parceiro_pequeno {
-    @apply min-w-60 md:w-60 hover:cursor-pointer border-transparent md:border-[#191B20] p-6 flex items-center justify-center overflow-hidden
+    @apply min-w-60 lg:w-55 xl:w-60 hover:cursor-pointer border-transparent lg:border-[#191B20] p-6 flex items-center justify-center overflow-hidden
 }
 
 @keyframes animacaoScroll {
@@ -208,7 +208,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_parceiro_grande {
-    @apply w-122 hidden md:flex items-center justify-center z-1 border-0
+    @apply w-122 hidden xl:flex items-center justify-center z-1 border-0
 }
 
 .imagem_logo_parceiro {
@@ -216,7 +216,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .div_logo_parceiro_mobile {
-    @apply md:hidden
+    @apply lg:hidden
 }
 
 .link_termos_politica_menu {
