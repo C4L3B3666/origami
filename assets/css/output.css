@@ -9,9 +9,11 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-orange-500: oklch(70.5% 0.213 47.604);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-green-500: oklch(72.3% 0.219 149.579);
+    --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-700: oklch(37.3% 0.034 259.733);
@@ -390,11 +392,17 @@
   .w-screen {
     width: 100vw;
   }
+  .max-w-3 {
+    max-width: calc(var(--spacing) * 3);
+  }
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
+  }
+  .max-w-30 {
+    max-width: calc(var(--spacing) * 30);
   }
   .max-w-85 {
     max-width: calc(var(--spacing) * 85);
@@ -717,6 +725,12 @@
   .px-18 {
     padding-inline: calc(var(--spacing) * 18);
   }
+  .px-25 {
+    padding-inline: calc(var(--spacing) * 25);
+  }
+  .px-45 {
+    padding-inline: calc(var(--spacing) * 45);
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -783,8 +797,14 @@
   .text-\[13px\] {
     font-size: 13px;
   }
+  .text-\[35px\] {
+    font-size: 35px;
+  }
   .text-\[36px\] {
     font-size: 36px;
+  }
+  .text-\[37px\] {
+    font-size: 37px;
   }
   .text-\[39px\] {
     font-size: 39px;
@@ -1214,6 +1234,11 @@
       justify-content: center;
     }
   }
+  .sm\:bg-green-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-green-500);
+    }
+  }
   .sm\:bg-red-500 {
     @media (width >= 40rem) {
       background-color: var(--color-red-500);
@@ -1379,6 +1404,11 @@
   .md\:overflow-y-visible {
     @media (width >= 48rem) {
       overflow-y: visible;
+    }
+  }
+  .md\:bg-orange-500 {
+    @media (width >= 48rem) {
+      background-color: var(--color-orange-500);
     }
   }
   .md\:bg-pink-500 {
@@ -1587,6 +1617,11 @@
       background-color: var(--color-green-500);
     }
   }
+  .lg\:bg-purple-500 {
+    @media (width >= 64rem) {
+      background-color: var(--color-purple-500);
+    }
+  }
   .lg\:px-0 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 0);
@@ -1701,6 +1736,11 @@
       border-width: 1px;
     }
   }
+  .xl\:bg-pink-500 {
+    @media (width >= 80rem) {
+      background-color: var(--color-pink-500);
+    }
+  }
   .xl\:bg-transparent {
     @media (width >= 80rem) {
       background-color: transparent;
@@ -1768,6 +1808,11 @@
   .\32 xl\:rounded-full {
     @media (width >= 96rem) {
       border-radius: calc(infinity * 1px);
+    }
+  }
+  .\32 xl\:bg-blue-500 {
+    @media (width >= 96rem) {
+      background-color: var(--color-blue-500);
     }
   }
   .\32 xl\:bg-gray-700 {
