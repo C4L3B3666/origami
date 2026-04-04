@@ -1704,6 +1704,15 @@
       text-align: left;
     }
   }
+  .xl\:hover\:rotate-6 {
+    @media (width >= 80rem) {
+      &:hover {
+        @media (hover: hover) {
+          rotate: 6deg;
+        }
+      }
+    }
+  }
   .\32 xl\:mt-10 {
     @media (width >= 96rem) {
       margin-top: calc(var(--spacing) * 10);
