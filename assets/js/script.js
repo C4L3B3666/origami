@@ -136,8 +136,7 @@ if (botaoDuvidas) {
         corpo.style.overflowY = "hidden"
     })
     
-    botaoFecharFormDuvidas = document.getElementById("botaoFecharFormDuvidas")
-    botaoFecharFormDuvidas.addEventListener("click", ()=> {
+    document.getElementById("botaoFecharFormDuvidas").addEventListener("click", ()=> {
         divContent.classList.remove("active")
         corpo.style.overflowY = "scroll"
     })
