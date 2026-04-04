@@ -124,7 +124,6 @@ faq.forEach(item => {
         item.classList.toggle("active");
     });
 });
-
 // ACORDEÃO DE PERGUNTAS 
 
 // FORMULÁRIO ENVIAR QUESTÃO
@@ -142,6 +141,18 @@ if (botaoDuvidas) {
     })
 }
 // FORMULÁRIO ENVIAR QUESTÃO
+
+// EFEITO CARDS EQUIPE
+const observador = new IntersectionObserver(entrar => {
+    entrar.forEach(cardEquipe => {
+        if(cardEquipe.isIntersecting)
+            cardEquipe.target.classList.add("visto")
+        else 
+            cardEquipe.target.classList.remove("visto")
+    })
+})
+const cardEquipe = document.querySelectorAll(".card_equipe").forEach(cards=> observador.observe(cards))
+// EFEITO CARDS EQUIPE
 
 // ANO ATUAL EM RODAPÉS 
 document.querySelectorAll(".anoAtualRodape").forEach((anoAtualRodape) => {
