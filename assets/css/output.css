@@ -16,6 +16,7 @@
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-pink-500: oklch(65.6% 0.241 354.308);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
@@ -413,6 +414,9 @@
   .max-w-95 {
     max-width: calc(var(--spacing) * 95);
   }
+  .max-w-100 {
+    max-width: calc(var(--spacing) * 100);
+  }
   .max-w-125 {
     max-width: calc(var(--spacing) * 125);
   }
@@ -637,6 +641,9 @@
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
+  }
+  .bg-yellow-500 {
+    background-color: var(--color-yellow-500);
   }
   .bg-linear-to-b {
     --tw-gradient-position: to bottom;
@@ -1204,6 +1211,16 @@
       width: calc(var(--spacing) * 190);
     }
   }
+  .sm\:max-w-100 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 100);
+    }
+  }
+  .sm\:max-w-105 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 105);
+    }
+  }
   .sm\:max-w-110 {
     @media (width >= 40rem) {
       max-width: calc(var(--spacing) * 110);
@@ -1232,6 +1249,11 @@
   .sm\:justify-center {
     @media (width >= 40rem) {
       justify-content: center;
+    }
+  }
+  .sm\:bg-gray-500 {
+    @media (width >= 40rem) {
+      background-color: var(--color-gray-500);
     }
   }
   .sm\:bg-green-500 {
@@ -1561,6 +1583,11 @@
       max-width: calc(var(--spacing) * 155);
     }
   }
+  .lg\:max-w-200 {
+    @media (width >= 64rem) {
+      max-width: calc(var(--spacing) * 200);
+    }
+  }
   .lg\:min-w-auto {
     @media (width >= 64rem) {
       min-width: auto;
@@ -1736,6 +1763,11 @@
       border-width: 1px;
     }
   }
+  .xl\:bg-blue-500 {
+    @media (width >= 80rem) {
+      background-color: var(--color-blue-500);
+    }
+  }
   .xl\:bg-pink-500 {
     @media (width >= 80rem) {
       background-color: var(--color-pink-500);
@@ -1818,6 +1850,11 @@
   .\32 xl\:bg-gray-700 {
     @media (width >= 96rem) {
       background-color: var(--color-gray-700);
+    }
+  }
+  .\32 xl\:bg-pink-500 {
+    @media (width >= 96rem) {
+      background-color: var(--color-pink-500);
     }
   }
   .\32 xl\:px-10 {
