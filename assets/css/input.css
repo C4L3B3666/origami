@@ -78,11 +78,11 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_estatisticas{
-    @apply relative rounded-xl border border-[#191B20] p-8 flex flex-col gap-4 transition-all duration-500 overflow-hidden before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px] w-67.5
+    @apply relative rounded-xl border border-[#191B20] p-8 flex flex-col gap-4 overflow-hidden before:absolute before:pointer-events-none before:inset-0 before:bg-[radial-gradient(circle_at_top,rgba(92,200,255,0.15),transparent_70%)] before:opacity-100 before:blur-[25px] w-67.5
 }
 
 .icone_card_estatisticas {
-    @apply text-[20px] text-[#5CC8FF] mb-3;
+    @apply text-[20px] text-[#5CC8FF] mb-3
 }
 
 .titulo_card_estatisticas {
@@ -98,7 +98,7 @@ header.active .linha_menu_hamburguer {
 }
 
 #divContentFormDuvidas {
-    @apply absolute bg-[#030304]/40 backdrop-blur-md pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center
+    @apply absolute backdrop-blur-md pointer-events-none hidden w-screen h-screen top-0 z-50 justify-center items-center
 }
 
 #divContentFormDuvidas.active {
@@ -198,7 +198,7 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_parceiro_pequeno {
-    @apply min-w-60 lg:w-55 xl:w-60 hover:cursor-pointer border-transparent lg:border-[#191B20] p-6 flex items-center justify-center overflow-hidden
+    @apply min-w-60 lg:w-55 xl:w-60 lg:hover:cursor-pointer lg:hover:border-[#5CC8FF]/20 lg:hover:scale-[1.05] border-transparent lg:border-[#191B20] p-6 flex items-center justify-center overflow-hidden transition-all duration-500
 }
 
 @keyframes animacaoScroll {
