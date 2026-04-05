@@ -398,6 +398,9 @@
   .max-w-141\.25 {
     max-width: calc(var(--spacing) * 141.25);
   }
+  .max-w-screen {
+    max-width: 100vw;
+  }
   .min-w-85 {
     min-width: calc(var(--spacing) * 85);
   }
@@ -2668,7 +2671,7 @@ header.active .linha_menu_hamburguer {
   border-style: var(--tw-border-style);
   border-width: 1px;
   border-color: var(--color-red-500);
-  background-color: transparent;
+  background-color: var(--color-red-500);
   padding-inline: calc(var(--spacing) * 4);
   padding-block: calc(var(--spacing) * 1);
   font-family: var(--font-pop);
@@ -2676,33 +2679,15 @@ header.active .linha_menu_hamburguer {
   line-height: var(--tw-leading, var(--text-sm--line-height));
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
-  color: var(--color-red-500);
+  color: #E2E8F0;
+  opacity: 85%;
+  --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   transition-property: all;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   --tw-duration: 300ms;
   transition-duration: 300ms;
-  &:hover {
-    @media (hover: hover) {
-      background-color: var(--color-red-500);
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      color: #E2E8F0;
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      opacity: 85%;
-    }
-  }
-  &:hover {
-    @media (hover: hover) {
-      --tw-shadow: 0 0 15px var(--tw-shadow-color, #fb2c36);
-      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-    }
-  }
 }
 .botao_terminar_sessao_dashboard:hover > .fa-arrow-right-to-bracket {
   position: relative;
