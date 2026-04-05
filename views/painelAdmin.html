@@ -10,7 +10,7 @@
 </head>
 <body class="md:overflow-hidden overflow-x-hidden bg-[#030304]">
     <div class="flex h-screen"> 
-        <aside class="absolute md:flex md:static border-r border-r-[#191B20] p-9 flex-col items-start justify-between md:min-w-67.5 min-w-screen bg-[#191b2062] backdrop-blur-2xl md:bg-transparent min-h-screen z-10 md:z-0 -translate-y-full md:translate-0 pointer-events-none md:pointer-events-auto opacity-0 md:opacity-100">
+        <aside class="aside_dash">
             <nav class="flex flex-col gap-6">
                 <nav class="flex items-center justify-between">
                     <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-50"></a>
@@ -37,13 +37,19 @@
         </aside>
 
         <section class="text-white w-screen">
-            <div class="border-b border-b-[#191B20] min-w-screen px-10 py-1.5 md:p-5">
-                <div class="flex items-center justify-between">
-                    <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-35 md:hidden"></a>
-                    <button class="bg-red-500 h-7 w-7 text-white rounded-full md:hidden text-sm shadow-[0_0_15px_#fb2c36]">+</button>
+            <div class="topo_dash">
+                <div>
+                    <div class="flex items-center justify-between">
+                        <a href="#"><img src="../assets/img/logo_full.png" alt="imagem logo da origami" class="w-35 md:hidden"></a>
+                        <button class="bg-red-500 h-7 w-7 text-white rounded-full md:hidden text-sm shadow-[0_0_15px_#fb2c36]">+</button>
+                    </div>
+                    <h1 class="font-geist uppercase font-black text-3xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">Olá, Sr. Dominus.</h1>
+                    <span class="font-pop text-sm text-[#E2E8F0] opacity-70">Você agora é um milionário! Desfrute o melhor da porra da tua vida.</span>
                 </div>
-                <h1 class="font-geist uppercase font-black text-3xl leading-tight bg-[linear-gradient(45deg,#ffffff,#9ca3af,#ffffff)] bg-clip-text text-transparent">Olá, Sr. Dominus.</h1>
-                <span class="font-pop text-sm text-[#E2E8F0] opacity-70">Você agora é um milionário! Desfrute o melhor da porra da tua vida.</span>
+                <div class="nav_btns">
+                    <button class="btn btn_primary">Alterar Lucro Diário <i class="fa-solid fa-bolt"></i></button>
+                    <button class="btn">Outras Opções <i class="fa-solid fa-hand-holding-dollar"></i></button>
+                </div>
             </div>
 
             <div class="inicio_dash">
