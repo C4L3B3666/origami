@@ -150,8 +150,8 @@ const observador = new IntersectionObserver(entrar => {
         else 
             cardEquipe.target.classList.remove("visto")
     })
-})
-// }, {threshold: 0.7} threshold brevemente porra)
+// })
+}, {threshold: 0.7})
 const cardEquipe = document.querySelectorAll(".card_equipe").forEach(cards=> observador.observe(cards))
 // EFEITO CARDS EQUIPE
 
