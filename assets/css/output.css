@@ -398,9 +398,6 @@
   .max-w-141\.25 {
     max-width: calc(var(--spacing) * 141.25);
   }
-  .max-w-screen {
-    max-width: 100vw;
-  }
   .min-w-85 {
     min-width: calc(var(--spacing) * 85);
   }
@@ -1407,11 +1404,6 @@
       overflow-y: visible;
     }
   }
-  .md\:p-5 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 5);
-    }
-  }
   .md\:px-6 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 6);
@@ -2402,6 +2394,7 @@ header.active .linha_menu_hamburguer {
   display: flex;
   height: calc(var(--spacing) * 120);
   min-width: calc(var(--spacing) * 85);
+  scale: 0.92;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-2xl);
@@ -2409,7 +2402,10 @@ header.active .linha_menu_hamburguer {
   border-width: 1px;
   border-color: #191B20;
   background-color: #030304;
-  transition-property: all;
+  opacity: 50%;
+  --tw-blur: blur(var(--blur-md));
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  transition-property: transform, translate, scale, rotate;
   transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
   transition-duration: var(--tw-duration, var(--default-transition-duration));
   --tw-duration: 700ms;
@@ -2428,8 +2424,24 @@ header.active .linha_menu_hamburguer {
   @media (width >= 64rem) {
     width: calc(var(--spacing) * 92);
   }
+  @media (width >= 64rem) {
+    --tw-scale-x: 100%;
+    --tw-scale-y: 100%;
+    --tw-scale-z: 100%;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
+  @media (width >= 64rem) {
+    opacity: 100%;
+  }
 }
 .card_equipe.visto {
+  --tw-scale-x: 100%;
+  --tw-scale-y: 100%;
+  --tw-scale-z: 100%;
+  scale: var(--tw-scale-x) var(--tw-scale-y);
+  opacity: 100%;
+  --tw-blur: blur(0px);
+  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   &:nth-child(2) {
     @media (width >= 64rem) {
       --tw-translate-x: calc(var(--spacing) * 50);

@@ -182,11 +182,11 @@ header.active .linha_menu_hamburguer {
 }
 
 .card_equipe {
-    @apply h-120 md:h-140 min-w-85 sm:max-w-85 lg:w-92 bg-[#030304] sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] transition-all duration-700 ease-in 
+    @apply h-120 md:h-140 min-w-85 scale-[0.92] lg:scale-100 lg:opacity-100 opacity-50 blur-md sm:max-w-85 lg:w-92 bg-[#030304] sticky top-18 md:top-27 flex items-center justify-center rounded-2xl border border-[#191B20] transition-transform duration-700 ease-in
 }
 
 .card_equipe.visto {
-    @apply nth-[2]:lg:translate-x-50 nth-[3]:lg:-translate-x-50 nth-[4]:lg:-translate-x-50 nth-[5]:lg:translate-x-50 nth-[2]:xl:translate-x-96 nth-[3]:xl:-translate-x-96 nth-[4]:xl:-translate-x-96 nth-[5]:xl:translate-x-96
+    @apply nth-[2]:lg:translate-x-50 nth-[3]:lg:-translate-x-50 nth-[4]:lg:-translate-x-50 nth-[5]:lg:translate-x-50 nth-[2]:xl:translate-x-96 nth-[3]:xl:-translate-x-96 nth-[4]:xl:-translate-x-96 nth-[5]:xl:translate-x-96 scale-100 opacity-100 blur-[0px]
 }
 
 .texto_card_equipe {
