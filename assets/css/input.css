@@ -201,13 +201,13 @@ header.active .linha_menu_hamburguer {
     @apply min-w-60 lg:w-55 xl:w-60 lg:hover:cursor-pointer lg:hover:border-[#5CC8FF]/20 lg:hover:scale-[1.05] border-transparent lg:border-[#191B20] p-6 flex items-center justify-center overflow-hidden transition-all duration-500
 }
 
-@keyframes animacaoScroll {
+@keyframes marquee {
     0% { 
         transform: translateX(0); 
     }
     
     100% { 
-        transform: translateX(-90%); 
+        transform: translateX(-50%); 
     }
 }
 
@@ -361,7 +361,7 @@ header.active .linha_menu_hamburguer {
 }
 
 /* Termos e Política de Privacidade */
-.link_img_logo_termo_politica {
+/* .link_img_logo_termo_politica {
     @apply py-0.5 ml-10 flex items-center justify-center
 }
 
@@ -399,4 +399,4 @@ header.active .linha_menu_hamburguer {
 
 .div_item_texto_termo_politica {
     @apply border-t border-t-[#504D4D63]
-}
+} */
