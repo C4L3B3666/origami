@@ -361,7 +361,7 @@ header.active .linha_menu_hamburguer {
 }
 
 /* Termos e Política de Privacidade */
-/* .link_img_logo_termo_politica {
+.link_img_logo_termo_politica {
     @apply py-0.5 ml-10 flex items-center justify-center
 }
 
@@ -399,4 +399,4 @@ header.active .linha_menu_hamburguer {
 
 .div_item_texto_termo_politica {
     @apply border-t border-t-[#504D4D63]
-} */
+}
